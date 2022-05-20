@@ -66,51 +66,19 @@
 			this.ExtinctionRvTxt = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.FilterGroupBox = new System.Windows.Forms.GroupBox();
+			this.FilterGridView = new System.Windows.Forms.DataGridView();
+			this.label19 = new System.Windows.Forms.Label();
+			this.FilterDropDown = new System.Windows.Forms.ComboBox();
 			this.SNTargetUpD = new System.Windows.Forms.NumericUpDown();
-			this.TSNTimegLabel = new System.Windows.Forms.Label();
-			this.TSNTimeuLabel = new System.Windows.Forms.Label();
-			this.TSNTimeuWideLabel = new System.Windows.Forms.Label();
-			this.TSNTimeUVLabel = new System.Windows.Forms.Label();
-			this.TSNTimeUVDarkLabel = new System.Windows.Forms.Label();
-			this.label22 = new System.Windows.Forms.Label();
-			this.label16 = new System.Windows.Forms.Label();
-			this.BGCountgLabel = new System.Windows.Forms.Label();
-			this.BGCountuLabel = new System.Windows.Forms.Label();
-			this.BGCountuWideLabel = new System.Windows.Forms.Label();
-			this.BGCountUVLabel = new System.Windows.Forms.Label();
-			this.BGCountUVDarkLabel = new System.Windows.Forms.Label();
 			this.label15 = new System.Windows.Forms.Label();
-			this.label13 = new System.Windows.Forms.Label();
-			this.MaxCountgLabel = new System.Windows.Forms.Label();
-			this.MaxCountuLabel = new System.Windows.Forms.Label();
-			this.MaxCountuWideLabel = new System.Windows.Forms.Label();
-			this.MaxCountUVLabel = new System.Windows.Forms.Label();
-			this.MaxCountUVDarkLabel = new System.Windows.Forms.Label();
 			this.SNHelpBtn = new System.Windows.Forms.Button();
-			this.MSNTimegLabel = new System.Windows.Forms.Label();
-			this.MSNTimeuLabel = new System.Windows.Forms.Label();
-			this.MSNTimeuWideLabel = new System.Windows.Forms.Label();
-			this.MSNTimeUVLabel = new System.Windows.Forms.Label();
-			this.MSNTimeUVDarkLabel = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.TotalCountgLabel = new System.Windows.Forms.Label();
-			this.FilteruRadBtn = new System.Windows.Forms.RadioButton();
-			this.TotalCountuLabel = new System.Windows.Forms.Label();
-			this.FilteruWideRadBtn = new System.Windows.Forms.RadioButton();
-			this.TotalCountuWideLabel = new System.Windows.Forms.Label();
-			this.FilterUVDarkRadBtn = new System.Windows.Forms.RadioButton();
-			this.TotalCountUVLabel = new System.Windows.Forms.Label();
-			this.FiltergRadBtn = new System.Windows.Forms.RadioButton();
-			this.TotalCountUVDarkLabel = new System.Windows.Forms.Label();
-			this.FilterUVRadBtn = new System.Windows.Forms.RadioButton();
 			this.EscBtn = new System.Windows.Forms.Button();
 			this.SourcePropertiesGroupBox = new System.Windows.Forms.GroupBox();
+			this.RedShiftUpDown = new System.Windows.Forms.NumericUpDown();
 			this.SersicnUpD = new System.Windows.Forms.NumericUpDown();
 			this.SersicReffUpD = new System.Windows.Forms.NumericUpDown();
 			this.label12 = new System.Windows.Forms.Label();
 			this.DistanceTxt = new System.Windows.Forms.TextBox();
-			this.RedShiftTxt = new System.Windows.Forms.TextBox();
 			this.label10 = new System.Windows.Forms.Label();
 			this.PowerLawNormTxt = new System.Windows.Forms.TextBox();
 			this.RadiusTxt = new System.Windows.Forms.TextBox();
@@ -143,19 +111,23 @@
 			this.MainMenu = new System.Windows.Forms.MenuStrip();
 			this.FileMenu = new System.Windows.Forms.ToolStripMenuItem();
 			this.SettingMenu = new System.Windows.Forms.ToolStripMenuItem();
-			this.PlotLimitXMaxText = new System.Windows.Forms.ToolStripMenuItem();
+			this.PlotLimitsMenu = new System.Windows.Forms.ToolStripMenuItem();
 			this.xAxisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.PlotLimitXMinText = new System.Windows.Forms.ToolStripTextBox();
 			this.xAxisMaximumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
-			this.dataBaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.PlotLimitXMaxText = new System.Windows.Forms.ToolStripTextBox();
+			this.DetectorSystemMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.LoadedDetectorSystemMenuLabel = new System.Windows.Forms.ToolStripMenuItem();
+			this.SelectNewDetectorMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
 			((System.ComponentModel.ISupportInitialize)(this.Chart_Source)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Chart_Final)).BeginInit();
 			this.SourceTypeGroupBox.SuspendLayout();
 			this.ExtinctionGroupBox.SuspendLayout();
 			this.FilterGroupBox.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.FilterGridView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.SNTargetUpD)).BeginInit();
 			this.SourcePropertiesGroupBox.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.RedShiftUpDown)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.SersicnUpD)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.SersicReffUpD)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Chart_Filter)).BeginInit();
@@ -604,57 +576,62 @@
 			// FilterGroupBox
 			// 
 			this.FilterGroupBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.FilterGroupBox.Controls.Add(this.FilterGridView);
+			this.FilterGroupBox.Controls.Add(this.label19);
+			this.FilterGroupBox.Controls.Add(this.FilterDropDown);
 			this.FilterGroupBox.Controls.Add(this.SNTargetUpD);
-			this.FilterGroupBox.Controls.Add(this.TSNTimegLabel);
-			this.FilterGroupBox.Controls.Add(this.TSNTimeuLabel);
-			this.FilterGroupBox.Controls.Add(this.TSNTimeuWideLabel);
-			this.FilterGroupBox.Controls.Add(this.TSNTimeUVLabel);
-			this.FilterGroupBox.Controls.Add(this.TSNTimeUVDarkLabel);
-			this.FilterGroupBox.Controls.Add(this.label22);
-			this.FilterGroupBox.Controls.Add(this.label16);
-			this.FilterGroupBox.Controls.Add(this.BGCountgLabel);
-			this.FilterGroupBox.Controls.Add(this.BGCountuLabel);
-			this.FilterGroupBox.Controls.Add(this.BGCountuWideLabel);
-			this.FilterGroupBox.Controls.Add(this.BGCountUVLabel);
-			this.FilterGroupBox.Controls.Add(this.BGCountUVDarkLabel);
 			this.FilterGroupBox.Controls.Add(this.label15);
-			this.FilterGroupBox.Controls.Add(this.label13);
-			this.FilterGroupBox.Controls.Add(this.MaxCountgLabel);
-			this.FilterGroupBox.Controls.Add(this.MaxCountuLabel);
-			this.FilterGroupBox.Controls.Add(this.MaxCountuWideLabel);
-			this.FilterGroupBox.Controls.Add(this.MaxCountUVLabel);
-			this.FilterGroupBox.Controls.Add(this.MaxCountUVDarkLabel);
 			this.FilterGroupBox.Controls.Add(this.SNHelpBtn);
-			this.FilterGroupBox.Controls.Add(this.MSNTimegLabel);
-			this.FilterGroupBox.Controls.Add(this.MSNTimeuLabel);
-			this.FilterGroupBox.Controls.Add(this.MSNTimeuWideLabel);
-			this.FilterGroupBox.Controls.Add(this.MSNTimeUVLabel);
-			this.FilterGroupBox.Controls.Add(this.MSNTimeUVDarkLabel);
-			this.FilterGroupBox.Controls.Add(this.label7);
-			this.FilterGroupBox.Controls.Add(this.label6);
-			this.FilterGroupBox.Controls.Add(this.TotalCountgLabel);
-			this.FilterGroupBox.Controls.Add(this.FilteruRadBtn);
-			this.FilterGroupBox.Controls.Add(this.TotalCountuLabel);
-			this.FilterGroupBox.Controls.Add(this.FilteruWideRadBtn);
-			this.FilterGroupBox.Controls.Add(this.TotalCountuWideLabel);
-			this.FilterGroupBox.Controls.Add(this.FilterUVDarkRadBtn);
-			this.FilterGroupBox.Controls.Add(this.TotalCountUVLabel);
-			this.FilterGroupBox.Controls.Add(this.FiltergRadBtn);
-			this.FilterGroupBox.Controls.Add(this.TotalCountUVDarkLabel);
-			this.FilterGroupBox.Controls.Add(this.FilterUVRadBtn);
 			this.FilterGroupBox.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.FilterGroupBox.Location = new System.Drawing.Point(845, 341);
 			this.FilterGroupBox.Name = "FilterGroupBox";
-			this.FilterGroupBox.Size = new System.Drawing.Size(596, 194);
+			this.FilterGroupBox.Size = new System.Drawing.Size(596, 243);
 			this.FilterGroupBox.TabIndex = 9;
 			this.FilterGroupBox.TabStop = false;
 			this.FilterGroupBox.Text = "Filter && Results";
-			this.FilterGroupBox.Enter += new System.EventHandler(this.FilterGroupBox_Enter);
+			// 
+			// FilterGridView
+			// 
+			this.FilterGridView.AllowUserToAddRows = false;
+			this.FilterGridView.AllowUserToDeleteRows = false;
+			this.FilterGridView.AllowUserToResizeColumns = false;
+			this.FilterGridView.AllowUserToResizeRows = false;
+			this.FilterGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+			this.FilterGridView.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
+			this.FilterGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.FilterGridView.Location = new System.Drawing.Point(11, 48);
+			this.FilterGridView.Name = "FilterGridView";
+			this.FilterGridView.ReadOnly = true;
+			this.FilterGridView.RowHeadersVisible = false;
+			this.FilterGridView.Size = new System.Drawing.Size(446, 183);
+			this.FilterGridView.TabIndex = 45;
+			this.FilterGridView.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.FilterGridView_CellMouseDown);
+			// 
+			// label19
+			// 
+			this.label19.AutoSize = true;
+			this.label19.Font = new System.Drawing.Font("Garamond", 10F);
+			this.label19.Location = new System.Drawing.Point(6, 23);
+			this.label19.Name = "label19";
+			this.label19.Size = new System.Drawing.Size(84, 16);
+			this.label19.TabIndex = 44;
+			this.label19.Text = "Display Filter:";
+			// 
+			// FilterDropDown
+			// 
+			this.FilterDropDown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.FilterDropDown.Font = new System.Drawing.Font("Garamond", 10F);
+			this.FilterDropDown.FormattingEnabled = true;
+			this.FilterDropDown.Location = new System.Drawing.Point(96, 20);
+			this.FilterDropDown.Name = "FilterDropDown";
+			this.FilterDropDown.Size = new System.Drawing.Size(121, 22);
+			this.FilterDropDown.TabIndex = 20;
+			this.FilterDropDown.SelectedIndexChanged += new System.EventHandler(this.FilterDropDown_SelectedIndexChanged);
 			// 
 			// SNTargetUpD
 			// 
 			this.SNTargetUpD.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.SNTargetUpD.Location = new System.Drawing.Point(49, 21);
+			this.SNTargetUpD.Location = new System.Drawing.Point(307, 20);
 			this.SNTargetUpD.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -670,213 +647,15 @@
             0});
 			this.SNTargetUpD.ValueChanged += new System.EventHandler(this.SNTargetUpD_ValueChanged);
 			// 
-			// TSNTimegLabel
-			// 
-			this.TSNTimegLabel.AutoSize = true;
-			this.TSNTimegLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.TSNTimegLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.TSNTimegLabel.Location = new System.Drawing.Point(489, 165);
-			this.TSNTimegLabel.Name = "TSNTimegLabel";
-			this.TSNTimegLabel.Size = new System.Drawing.Size(33, 18);
-			this.TSNTimegLabel.TabIndex = 43;
-			this.TSNTimegLabel.Text = "time";
-			// 
-			// TSNTimeuLabel
-			// 
-			this.TSNTimeuLabel.AutoSize = true;
-			this.TSNTimeuLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.TSNTimeuLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.TSNTimeuLabel.Location = new System.Drawing.Point(489, 138);
-			this.TSNTimeuLabel.Name = "TSNTimeuLabel";
-			this.TSNTimeuLabel.Size = new System.Drawing.Size(33, 18);
-			this.TSNTimeuLabel.TabIndex = 42;
-			this.TSNTimeuLabel.Text = "time";
-			// 
-			// TSNTimeuWideLabel
-			// 
-			this.TSNTimeuWideLabel.AutoSize = true;
-			this.TSNTimeuWideLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.TSNTimeuWideLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.TSNTimeuWideLabel.Location = new System.Drawing.Point(489, 109);
-			this.TSNTimeuWideLabel.Name = "TSNTimeuWideLabel";
-			this.TSNTimeuWideLabel.Size = new System.Drawing.Size(33, 18);
-			this.TSNTimeuWideLabel.TabIndex = 41;
-			this.TSNTimeuWideLabel.Text = "time";
-			// 
-			// TSNTimeUVLabel
-			// 
-			this.TSNTimeUVLabel.AutoSize = true;
-			this.TSNTimeUVLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.TSNTimeUVLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.TSNTimeUVLabel.Location = new System.Drawing.Point(489, 81);
-			this.TSNTimeUVLabel.Name = "TSNTimeUVLabel";
-			this.TSNTimeUVLabel.Size = new System.Drawing.Size(33, 18);
-			this.TSNTimeUVLabel.TabIndex = 40;
-			this.TSNTimeUVLabel.Text = "time";
-			// 
-			// TSNTimeUVDarkLabel
-			// 
-			this.TSNTimeUVDarkLabel.AutoSize = true;
-			this.TSNTimeUVDarkLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.TSNTimeUVDarkLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.TSNTimeUVDarkLabel.Location = new System.Drawing.Point(489, 53);
-			this.TSNTimeUVDarkLabel.Name = "TSNTimeUVDarkLabel";
-			this.TSNTimeUVDarkLabel.Size = new System.Drawing.Size(33, 18);
-			this.TSNTimeUVDarkLabel.TabIndex = 39;
-			this.TSNTimeUVDarkLabel.Text = "time";
-			// 
-			// label22
-			// 
-			this.label22.AutoSize = true;
-			this.label22.Font = new System.Drawing.Font("Garamond", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label22.Location = new System.Drawing.Point(484, 28);
-			this.label22.Name = "label22";
-			this.label22.Size = new System.Drawing.Size(66, 16);
-			this.label22.TabIndex = 38;
-			this.label22.Text = "TotCPS T";
-			this.toolTip1.SetToolTip(this.label22, "Time to reach SN for Total Counts per Second (TotCPS)");
-			// 
-			// label16
-			// 
-			this.label16.AutoSize = true;
-			this.label16.Font = new System.Drawing.Font("Garamond", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label16.Location = new System.Drawing.Point(337, 28);
-			this.label16.Name = "label16";
-			this.label16.Size = new System.Drawing.Size(48, 16);
-			this.label16.TabIndex = 34;
-			this.label16.Text = "BgCPS";
-			this.toolTip1.SetToolTip(this.label16, "Background Counts per Second per Pixel");
-			// 
-			// BGCountgLabel
-			// 
-			this.BGCountgLabel.AutoSize = true;
-			this.BGCountgLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.BGCountgLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.BGCountgLabel.Location = new System.Drawing.Point(341, 165);
-			this.BGCountgLabel.Name = "BGCountgLabel";
-			this.BGCountgLabel.Size = new System.Drawing.Size(40, 18);
-			this.BGCountgLabel.TabIndex = 37;
-			this.BGCountgLabel.Text = "count";
-			// 
-			// BGCountuLabel
-			// 
-			this.BGCountuLabel.AutoSize = true;
-			this.BGCountuLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.BGCountuLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.BGCountuLabel.Location = new System.Drawing.Point(341, 138);
-			this.BGCountuLabel.Name = "BGCountuLabel";
-			this.BGCountuLabel.Size = new System.Drawing.Size(40, 18);
-			this.BGCountuLabel.TabIndex = 36;
-			this.BGCountuLabel.Text = "count";
-			// 
-			// BGCountuWideLabel
-			// 
-			this.BGCountuWideLabel.AutoSize = true;
-			this.BGCountuWideLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.BGCountuWideLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.BGCountuWideLabel.Location = new System.Drawing.Point(341, 109);
-			this.BGCountuWideLabel.Name = "BGCountuWideLabel";
-			this.BGCountuWideLabel.Size = new System.Drawing.Size(40, 18);
-			this.BGCountuWideLabel.TabIndex = 35;
-			this.BGCountuWideLabel.Text = "count";
-			// 
-			// BGCountUVLabel
-			// 
-			this.BGCountUVLabel.AutoSize = true;
-			this.BGCountUVLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.BGCountUVLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.BGCountUVLabel.Location = new System.Drawing.Point(341, 81);
-			this.BGCountUVLabel.Name = "BGCountUVLabel";
-			this.BGCountUVLabel.Size = new System.Drawing.Size(40, 18);
-			this.BGCountUVLabel.TabIndex = 33;
-			this.BGCountUVLabel.Text = "count";
-			// 
-			// BGCountUVDarkLabel
-			// 
-			this.BGCountUVDarkLabel.AutoSize = true;
-			this.BGCountUVDarkLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.BGCountUVDarkLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.BGCountUVDarkLabel.Location = new System.Drawing.Point(341, 53);
-			this.BGCountUVDarkLabel.Name = "BGCountUVDarkLabel";
-			this.BGCountUVDarkLabel.Size = new System.Drawing.Size(40, 18);
-			this.BGCountUVDarkLabel.TabIndex = 32;
-			this.BGCountUVDarkLabel.Text = "count";
-			// 
 			// label15
 			// 
 			this.label15.AutoSize = true;
-			this.label15.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label15.Location = new System.Drawing.Point(7, 24);
+			this.label15.Font = new System.Drawing.Font("Garamond", 10F);
+			this.label15.Location = new System.Drawing.Point(226, 23);
 			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(35, 16);
+			this.label15.Size = new System.Drawing.Size(75, 16);
 			this.label15.TabIndex = 31;
-			this.label15.Text = "S/N:";
-			// 
-			// label13
-			// 
-			this.label13.AutoSize = true;
-			this.label13.Font = new System.Drawing.Font("Garamond", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label13.Location = new System.Drawing.Point(195, 28);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(58, 16);
-			this.label13.TabIndex = 27;
-			this.label13.Text = "MaxCPS";
-			this.toolTip1.SetToolTip(this.label13, "Maximum Source Counts per Second per Pixel");
-			// 
-			// MaxCountgLabel
-			// 
-			this.MaxCountgLabel.AutoSize = true;
-			this.MaxCountgLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.MaxCountgLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.MaxCountgLabel.Location = new System.Drawing.Point(199, 165);
-			this.MaxCountgLabel.Name = "MaxCountgLabel";
-			this.MaxCountgLabel.Size = new System.Drawing.Size(40, 18);
-			this.MaxCountgLabel.TabIndex = 30;
-			this.MaxCountgLabel.Text = "count";
-			// 
-			// MaxCountuLabel
-			// 
-			this.MaxCountuLabel.AutoSize = true;
-			this.MaxCountuLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.MaxCountuLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.MaxCountuLabel.Location = new System.Drawing.Point(199, 138);
-			this.MaxCountuLabel.Name = "MaxCountuLabel";
-			this.MaxCountuLabel.Size = new System.Drawing.Size(40, 18);
-			this.MaxCountuLabel.TabIndex = 29;
-			this.MaxCountuLabel.Text = "count";
-			// 
-			// MaxCountuWideLabel
-			// 
-			this.MaxCountuWideLabel.AutoSize = true;
-			this.MaxCountuWideLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.MaxCountuWideLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.MaxCountuWideLabel.Location = new System.Drawing.Point(199, 109);
-			this.MaxCountuWideLabel.Name = "MaxCountuWideLabel";
-			this.MaxCountuWideLabel.Size = new System.Drawing.Size(40, 18);
-			this.MaxCountuWideLabel.TabIndex = 28;
-			this.MaxCountuWideLabel.Text = "count";
-			// 
-			// MaxCountUVLabel
-			// 
-			this.MaxCountUVLabel.AutoSize = true;
-			this.MaxCountUVLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.MaxCountUVLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.MaxCountUVLabel.Location = new System.Drawing.Point(199, 81);
-			this.MaxCountUVLabel.Name = "MaxCountUVLabel";
-			this.MaxCountUVLabel.Size = new System.Drawing.Size(40, 18);
-			this.MaxCountUVLabel.TabIndex = 26;
-			this.MaxCountUVLabel.Text = "count";
-			// 
-			// MaxCountUVDarkLabel
-			// 
-			this.MaxCountUVDarkLabel.AutoSize = true;
-			this.MaxCountUVDarkLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.MaxCountUVDarkLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.MaxCountUVDarkLabel.Location = new System.Drawing.Point(199, 53);
-			this.MaxCountUVDarkLabel.Name = "MaxCountUVDarkLabel";
-			this.MaxCountUVDarkLabel.Size = new System.Drawing.Size(40, 18);
-			this.MaxCountUVDarkLabel.TabIndex = 25;
-			this.MaxCountUVDarkLabel.Text = "count";
+			this.label15.Text = "Target S/N:";
 			// 
 			// SNHelpBtn
 			// 
@@ -891,203 +670,6 @@
 			this.SNHelpBtn.UseVisualStyleBackColor = true;
 			this.SNHelpBtn.Click += new System.EventHandler(this.SNHelpBtn_Click);
 			// 
-			// MSNTimegLabel
-			// 
-			this.MSNTimegLabel.AutoSize = true;
-			this.MSNTimegLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.MSNTimegLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.MSNTimegLabel.Location = new System.Drawing.Point(409, 165);
-			this.MSNTimegLabel.Name = "MSNTimegLabel";
-			this.MSNTimegLabel.Size = new System.Drawing.Size(33, 18);
-			this.MSNTimegLabel.TabIndex = 24;
-			this.MSNTimegLabel.Text = "time";
-			// 
-			// MSNTimeuLabel
-			// 
-			this.MSNTimeuLabel.AutoSize = true;
-			this.MSNTimeuLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.MSNTimeuLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.MSNTimeuLabel.Location = new System.Drawing.Point(409, 138);
-			this.MSNTimeuLabel.Name = "MSNTimeuLabel";
-			this.MSNTimeuLabel.Size = new System.Drawing.Size(33, 18);
-			this.MSNTimeuLabel.TabIndex = 23;
-			this.MSNTimeuLabel.Text = "time";
-			// 
-			// MSNTimeuWideLabel
-			// 
-			this.MSNTimeuWideLabel.AutoSize = true;
-			this.MSNTimeuWideLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.MSNTimeuWideLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.MSNTimeuWideLabel.Location = new System.Drawing.Point(409, 109);
-			this.MSNTimeuWideLabel.Name = "MSNTimeuWideLabel";
-			this.MSNTimeuWideLabel.Size = new System.Drawing.Size(33, 18);
-			this.MSNTimeuWideLabel.TabIndex = 22;
-			this.MSNTimeuWideLabel.Text = "time";
-			// 
-			// MSNTimeUVLabel
-			// 
-			this.MSNTimeUVLabel.AutoSize = true;
-			this.MSNTimeUVLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.MSNTimeUVLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.MSNTimeUVLabel.Location = new System.Drawing.Point(409, 81);
-			this.MSNTimeUVLabel.Name = "MSNTimeUVLabel";
-			this.MSNTimeUVLabel.Size = new System.Drawing.Size(33, 18);
-			this.MSNTimeUVLabel.TabIndex = 21;
-			this.MSNTimeUVLabel.Text = "time";
-			// 
-			// MSNTimeUVDarkLabel
-			// 
-			this.MSNTimeUVDarkLabel.AutoSize = true;
-			this.MSNTimeUVDarkLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.MSNTimeUVDarkLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.MSNTimeUVDarkLabel.Location = new System.Drawing.Point(409, 53);
-			this.MSNTimeUVDarkLabel.Name = "MSNTimeUVDarkLabel";
-			this.MSNTimeUVDarkLabel.Size = new System.Drawing.Size(33, 18);
-			this.MSNTimeUVDarkLabel.TabIndex = 20;
-			this.MSNTimeUVDarkLabel.Text = "time";
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Font = new System.Drawing.Font("Garamond", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label7.Location = new System.Drawing.Point(405, 28);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(72, 16);
-			this.label7.TabIndex = 16;
-			this.label7.Text = "MaxCPS T";
-			this.toolTip1.SetToolTip(this.label7, "Time to reach SN for Maximum counts per second (MaxCPS)");
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Font = new System.Drawing.Font("Garamond", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label6.Location = new System.Drawing.Point(267, 28);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(52, 16);
-			this.label6.TabIndex = 16;
-			this.label6.Text = "TotCPS";
-			this.toolTip1.SetToolTip(this.label6, "Total source Counts per Second");
-			// 
-			// TotalCountgLabel
-			// 
-			this.TotalCountgLabel.AutoSize = true;
-			this.TotalCountgLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.TotalCountgLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.TotalCountgLabel.Location = new System.Drawing.Point(271, 165);
-			this.TotalCountgLabel.Name = "TotalCountgLabel";
-			this.TotalCountgLabel.Size = new System.Drawing.Size(40, 18);
-			this.TotalCountgLabel.TabIndex = 18;
-			this.TotalCountgLabel.Text = "count";
-			// 
-			// FilteruRadBtn
-			// 
-			this.FilteruRadBtn.AutoSize = true;
-			this.FilteruRadBtn.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.FilteruRadBtn.Location = new System.Drawing.Point(13, 134);
-			this.FilteruRadBtn.Name = "FilteruRadBtn";
-			this.FilteruRadBtn.Size = new System.Drawing.Size(134, 20);
-			this.FilteruRadBtn.TabIndex = 5;
-			this.FilteruRadBtn.TabStop = true;
-			this.FilteruRadBtn.Text = "u (300nm - 400nm)";
-			this.FilteruRadBtn.UseVisualStyleBackColor = true;
-			this.FilteruRadBtn.CheckedChanged += new System.EventHandler(this.FilteruRadBtn_CheckedChanged);
-			// 
-			// TotalCountuLabel
-			// 
-			this.TotalCountuLabel.AutoSize = true;
-			this.TotalCountuLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.TotalCountuLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.TotalCountuLabel.Location = new System.Drawing.Point(271, 138);
-			this.TotalCountuLabel.Name = "TotalCountuLabel";
-			this.TotalCountuLabel.Size = new System.Drawing.Size(40, 18);
-			this.TotalCountuLabel.TabIndex = 17;
-			this.TotalCountuLabel.Text = "count";
-			// 
-			// FilteruWideRadBtn
-			// 
-			this.FilteruWideRadBtn.AutoSize = true;
-			this.FilteruWideRadBtn.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.FilteruWideRadBtn.Location = new System.Drawing.Point(13, 106);
-			this.FilteruWideRadBtn.Name = "FilteruWideRadBtn";
-			this.FilteruWideRadBtn.Size = new System.Drawing.Size(166, 20);
-			this.FilteruWideRadBtn.TabIndex = 4;
-			this.FilteruWideRadBtn.TabStop = true;
-			this.FilteruWideRadBtn.Text = "u Wide (260nm - 400nm)";
-			this.FilteruWideRadBtn.UseVisualStyleBackColor = true;
-			this.FilteruWideRadBtn.CheckedChanged += new System.EventHandler(this.FilteruWideRadBtn_CheckedChanged);
-			// 
-			// TotalCountuWideLabel
-			// 
-			this.TotalCountuWideLabel.AutoSize = true;
-			this.TotalCountuWideLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.TotalCountuWideLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.TotalCountuWideLabel.Location = new System.Drawing.Point(271, 109);
-			this.TotalCountuWideLabel.Name = "TotalCountuWideLabel";
-			this.TotalCountuWideLabel.Size = new System.Drawing.Size(40, 18);
-			this.TotalCountuWideLabel.TabIndex = 16;
-			this.TotalCountuWideLabel.Text = "count";
-			// 
-			// FilterUVDarkRadBtn
-			// 
-			this.FilterUVDarkRadBtn.AutoSize = true;
-			this.FilterUVDarkRadBtn.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.FilterUVDarkRadBtn.Location = new System.Drawing.Point(13, 50);
-			this.FilterUVDarkRadBtn.Name = "FilterUVDarkRadBtn";
-			this.FilterUVDarkRadBtn.Size = new System.Drawing.Size(179, 20);
-			this.FilterUVDarkRadBtn.TabIndex = 3;
-			this.FilterUVDarkRadBtn.TabStop = true;
-			this.FilterUVDarkRadBtn.Text = "UV Dark (135nm - 260nm)";
-			this.FilterUVDarkRadBtn.UseVisualStyleBackColor = true;
-			this.FilterUVDarkRadBtn.CheckedChanged += new System.EventHandler(this.FilterUVDarkRadBtn_CheckedChanged);
-			// 
-			// TotalCountUVLabel
-			// 
-			this.TotalCountUVLabel.AutoSize = true;
-			this.TotalCountUVLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.TotalCountUVLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.TotalCountUVLabel.Location = new System.Drawing.Point(271, 81);
-			this.TotalCountUVLabel.Name = "TotalCountUVLabel";
-			this.TotalCountUVLabel.Size = new System.Drawing.Size(40, 18);
-			this.TotalCountUVLabel.TabIndex = 15;
-			this.TotalCountUVLabel.Text = "count";
-			// 
-			// FiltergRadBtn
-			// 
-			this.FiltergRadBtn.AutoSize = true;
-			this.FiltergRadBtn.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.FiltergRadBtn.Location = new System.Drawing.Point(13, 162);
-			this.FiltergRadBtn.Name = "FiltergRadBtn";
-			this.FiltergRadBtn.Size = new System.Drawing.Size(133, 20);
-			this.FiltergRadBtn.TabIndex = 2;
-			this.FiltergRadBtn.TabStop = true;
-			this.FiltergRadBtn.Text = "g (440nm - 550nm)";
-			this.FiltergRadBtn.UseVisualStyleBackColor = true;
-			this.FiltergRadBtn.CheckedChanged += new System.EventHandler(this.FiltergRadBtn_CheckedChanged);
-			// 
-			// TotalCountUVDarkLabel
-			// 
-			this.TotalCountUVDarkLabel.AutoSize = true;
-			this.TotalCountUVDarkLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.TotalCountUVDarkLabel.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.TotalCountUVDarkLabel.Location = new System.Drawing.Point(271, 53);
-			this.TotalCountUVDarkLabel.Name = "TotalCountUVDarkLabel";
-			this.TotalCountUVDarkLabel.Size = new System.Drawing.Size(40, 18);
-			this.TotalCountUVDarkLabel.TabIndex = 14;
-			this.TotalCountUVDarkLabel.Text = "count";
-			// 
-			// FilterUVRadBtn
-			// 
-			this.FilterUVRadBtn.AutoSize = true;
-			this.FilterUVRadBtn.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.FilterUVRadBtn.Location = new System.Drawing.Point(13, 78);
-			this.FilterUVRadBtn.Name = "FilterUVRadBtn";
-			this.FilterUVRadBtn.Size = new System.Drawing.Size(146, 20);
-			this.FilterUVRadBtn.TabIndex = 0;
-			this.FilterUVRadBtn.TabStop = true;
-			this.FilterUVRadBtn.Text = "UV (150nm - 300nm)";
-			this.FilterUVRadBtn.UseVisualStyleBackColor = true;
-			this.FilterUVRadBtn.CheckedChanged += new System.EventHandler(this.FilterUVRadBtn_CheckedChanged);
-			// 
 			// EscBtn
 			// 
 			this.EscBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
@@ -1095,18 +677,18 @@
 			this.EscBtn.Name = "EscBtn";
 			this.EscBtn.Size = new System.Drawing.Size(75, 23);
 			this.EscBtn.TabIndex = 12;
-			this.EscBtn.Text = "Quit";
+			this.EscBtn.Text = "Quit (Esc)";
 			this.EscBtn.UseVisualStyleBackColor = true;
 			this.EscBtn.Click += new System.EventHandler(this.EscBtn_Click);
 			// 
 			// SourcePropertiesGroupBox
 			// 
 			this.SourcePropertiesGroupBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+			this.SourcePropertiesGroupBox.Controls.Add(this.RedShiftUpDown);
 			this.SourcePropertiesGroupBox.Controls.Add(this.SersicnUpD);
 			this.SourcePropertiesGroupBox.Controls.Add(this.SersicReffUpD);
 			this.SourcePropertiesGroupBox.Controls.Add(this.label12);
 			this.SourcePropertiesGroupBox.Controls.Add(this.DistanceTxt);
-			this.SourcePropertiesGroupBox.Controls.Add(this.RedShiftTxt);
 			this.SourcePropertiesGroupBox.Controls.Add(this.label10);
 			this.SourcePropertiesGroupBox.Controls.Add(this.PowerLawNormTxt);
 			this.SourcePropertiesGroupBox.Controls.Add(this.RadiusTxt);
@@ -1127,6 +709,27 @@
 			this.SourcePropertiesGroupBox.TabIndex = 13;
 			this.SourcePropertiesGroupBox.TabStop = false;
 			this.SourcePropertiesGroupBox.Text = "Source Properties";
+			// 
+			// RedShiftUpDown
+			// 
+			this.RedShiftUpDown.DecimalPlaces = 2;
+			this.RedShiftUpDown.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.RedShiftUpDown.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+			this.RedShiftUpDown.Location = new System.Drawing.Point(291, 108);
+			this.RedShiftUpDown.Maximum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+			this.RedShiftUpDown.Name = "RedShiftUpDown";
+			this.RedShiftUpDown.Size = new System.Drawing.Size(47, 22);
+			this.RedShiftUpDown.TabIndex = 20;
+			this.toolTip1.SetToolTip(this.RedShiftUpDown, "arcseconds");
+			this.RedShiftUpDown.ValueChanged += new System.EventHandler(this.RedShiftUpDown_ValueChanged);
 			// 
 			// SersicnUpD
 			// 
@@ -1160,8 +763,9 @@
 			// 
 			// SersicReffUpD
 			// 
+			this.SersicReffUpD.DecimalPlaces = 1;
 			this.SersicReffUpD.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.SersicReffUpD.Location = new System.Drawing.Point(293, 134);
+			this.SersicReffUpD.Location = new System.Drawing.Point(291, 134);
 			this.SersicReffUpD.Maximum = new decimal(new int[] {
             999,
             0,
@@ -1173,7 +777,7 @@
             0,
             0});
 			this.SersicReffUpD.Name = "SersicReffUpD";
-			this.SersicReffUpD.Size = new System.Drawing.Size(45, 22);
+			this.SersicReffUpD.Size = new System.Drawing.Size(47, 22);
 			this.SersicReffUpD.TabIndex = 19;
 			this.toolTip1.SetToolTip(this.SersicReffUpD, "arcseconds");
 			this.SersicReffUpD.Value = new decimal(new int[] {
@@ -1204,22 +808,11 @@
 			this.DistanceTxt.TextChanged += new System.EventHandler(this.DistanceTxt_TextChanged);
 			this.DistanceTxt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DistanceTxt_KeyDown);
 			// 
-			// RedShiftTxt
-			// 
-			this.RedShiftTxt.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.RedShiftTxt.Location = new System.Drawing.Point(293, 108);
-			this.RedShiftTxt.Name = "RedShiftTxt";
-			this.RedShiftTxt.Size = new System.Drawing.Size(45, 22);
-			this.RedShiftTxt.TabIndex = 22;
-			this.RedShiftTxt.Text = "0";
-			this.RedShiftTxt.TextChanged += new System.EventHandler(this.RedShiftTxt_TextChanged);
-			this.RedShiftTxt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.RedShiftTxt_KeyDown);
-			// 
 			// label10
 			// 
 			this.label10.AutoSize = true;
 			this.label10.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label10.Location = new System.Drawing.Point(261, 136);
+			this.label10.Location = new System.Drawing.Point(259, 136);
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size(25, 16);
 			this.label10.TabIndex = 25;
@@ -1228,9 +821,9 @@
 			// PowerLawNormTxt
 			// 
 			this.PowerLawNormTxt.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.PowerLawNormTxt.Location = new System.Drawing.Point(293, 82);
+			this.PowerLawNormTxt.Location = new System.Drawing.Point(291, 82);
 			this.PowerLawNormTxt.Name = "PowerLawNormTxt";
-			this.PowerLawNormTxt.Size = new System.Drawing.Size(45, 22);
+			this.PowerLawNormTxt.Size = new System.Drawing.Size(47, 22);
 			this.PowerLawNormTxt.TabIndex = 18;
 			this.PowerLawNormTxt.Text = "1";
 			this.PowerLawNormTxt.TextChanged += new System.EventHandler(this.PowerLawNormTxt_TextChanged);
@@ -1239,9 +832,9 @@
 			// RadiusTxt
 			// 
 			this.RadiusTxt.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.RadiusTxt.Location = new System.Drawing.Point(293, 28);
+			this.RadiusTxt.Location = new System.Drawing.Point(291, 28);
 			this.RadiusTxt.Name = "RadiusTxt";
-			this.RadiusTxt.Size = new System.Drawing.Size(45, 22);
+			this.RadiusTxt.Size = new System.Drawing.Size(47, 22);
 			this.RadiusTxt.TabIndex = 16;
 			this.RadiusTxt.Text = "1";
 			this.RadiusTxt.TextChanged += new System.EventHandler(this.RadiusTxt_TextChanged);
@@ -1251,7 +844,7 @@
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(224, 110);
+			this.label1.Location = new System.Drawing.Point(222, 110);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(62, 16);
 			this.label1.TabIndex = 21;
@@ -1282,7 +875,7 @@
 			// 
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label3.Location = new System.Drawing.Point(242, 86);
+			this.label3.Location = new System.Drawing.Point(240, 86);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(44, 16);
 			this.label3.TabIndex = 17;
@@ -1313,7 +906,7 @@
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Garamond", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label2.Location = new System.Drawing.Point(184, 29);
+			this.label2.Location = new System.Drawing.Point(182, 29);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(89, 16);
 			this.label2.TabIndex = 14;
@@ -1440,7 +1033,7 @@
             0,
             196608});
 			this.MirrorAreaUpD.Name = "MirrorAreaUpD";
-			this.MirrorAreaUpD.Size = new System.Drawing.Size(51, 22);
+			this.MirrorAreaUpD.Size = new System.Drawing.Size(56, 22);
 			this.MirrorAreaUpD.TabIndex = 10;
 			this.toolTip1.SetToolTip(this.MirrorAreaUpD, "Effective mirror collecting area");
 			this.MirrorAreaUpD.Value = new decimal(new int[] {
@@ -1472,12 +1065,12 @@
             65536});
 			this.DarkRateUpD.Location = new System.Drawing.Point(173, 112);
 			this.DarkRateUpD.Maximum = new decimal(new int[] {
-            10,
+            1000,
             0,
             0,
             0});
 			this.DarkRateUpD.Name = "DarkRateUpD";
-			this.DarkRateUpD.Size = new System.Drawing.Size(51, 22);
+			this.DarkRateUpD.Size = new System.Drawing.Size(56, 22);
 			this.DarkRateUpD.TabIndex = 8;
 			this.toolTip1.SetToolTip(this.DarkRateUpD, "counts per minute per pixel");
 			this.DarkRateUpD.Value = new decimal(new int[] {
@@ -1508,8 +1101,13 @@
             0,
             65536});
 			this.ReadNoiseUpD.Location = new System.Drawing.Point(173, 89);
+			this.ReadNoiseUpD.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
 			this.ReadNoiseUpD.Name = "ReadNoiseUpD";
-			this.ReadNoiseUpD.Size = new System.Drawing.Size(51, 22);
+			this.ReadNoiseUpD.Size = new System.Drawing.Size(56, 22);
 			this.ReadNoiseUpD.TabIndex = 6;
 			this.toolTip1.SetToolTip(this.ReadNoiseUpD, "per pixel");
 			this.ReadNoiseUpD.Value = new decimal(new int[] {
@@ -1556,7 +1154,7 @@
             0,
             131072});
 			this.PlateScaleUpD.Name = "PlateScaleUpD";
-			this.PlateScaleUpD.Size = new System.Drawing.Size(51, 22);
+			this.PlateScaleUpD.Size = new System.Drawing.Size(56, 22);
 			this.PlateScaleUpD.TabIndex = 1;
 			this.PlateScaleUpD.Value = new decimal(new int[] {
             1,
@@ -1581,7 +1179,7 @@
             0,
             131072});
 			this.FWHMUpD.Name = "FWHMUpD";
-			this.FWHMUpD.Size = new System.Drawing.Size(51, 22);
+			this.FWHMUpD.Size = new System.Drawing.Size(56, 22);
 			this.FWHMUpD.TabIndex = 3;
 			this.FWHMUpD.Value = new decimal(new int[] {
             15,
@@ -1634,7 +1232,7 @@
 			this.MainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileMenu,
             this.SettingMenu,
-            this.dataBaseToolStripMenuItem});
+            this.DetectorSystemMenuItem});
 			this.MainMenu.Location = new System.Drawing.Point(0, 0);
 			this.MainMenu.Name = "MainMenu";
 			this.MainMenu.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
@@ -1651,21 +1249,21 @@
 			// SettingMenu
 			// 
 			this.SettingMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.PlotLimitXMaxText});
+            this.PlotLimitsMenu});
 			this.SettingMenu.Name = "SettingMenu";
 			this.SettingMenu.Size = new System.Drawing.Size(61, 22);
 			this.SettingMenu.Text = "Settings";
 			// 
-			// PlotLimitXMaxText
+			// PlotLimitsMenu
 			// 
-			this.PlotLimitXMaxText.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.PlotLimitsMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.xAxisToolStripMenuItem,
             this.PlotLimitXMinText,
             this.xAxisMaximumToolStripMenuItem,
-            this.toolStripTextBox2});
-			this.PlotLimitXMaxText.Name = "PlotLimitXMaxText";
-			this.PlotLimitXMaxText.Size = new System.Drawing.Size(130, 22);
-			this.PlotLimitXMaxText.Text = "Plot Limits";
+            this.PlotLimitXMaxText});
+			this.PlotLimitsMenu.Name = "PlotLimitsMenu";
+			this.PlotLimitsMenu.Size = new System.Drawing.Size(130, 22);
+			this.PlotLimitsMenu.Text = "Plot Limits";
 			// 
 			// xAxisToolStripMenuItem
 			// 
@@ -1679,6 +1277,7 @@
 			this.PlotLimitXMinText.Name = "PlotLimitXMinText";
 			this.PlotLimitXMinText.Size = new System.Drawing.Size(100, 23);
 			this.PlotLimitXMinText.Text = "120";
+			this.PlotLimitXMinText.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PlotLimitXMinText_KeyDown);
 			// 
 			// xAxisMaximumToolStripMenuItem
 			// 
@@ -1686,18 +1285,37 @@
 			this.xAxisMaximumToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
 			this.xAxisMaximumToolStripMenuItem.Text = "X-Axis Maximum (nm)";
 			// 
-			// toolStripTextBox2
+			// PlotLimitXMaxText
 			// 
-			this.toolStripTextBox2.BackColor = System.Drawing.Color.Silver;
-			this.toolStripTextBox2.Name = "toolStripTextBox2";
-			this.toolStripTextBox2.Size = new System.Drawing.Size(100, 23);
-			this.toolStripTextBox2.Text = "600";
+			this.PlotLimitXMaxText.BackColor = System.Drawing.Color.Silver;
+			this.PlotLimitXMaxText.Name = "PlotLimitXMaxText";
+			this.PlotLimitXMaxText.Size = new System.Drawing.Size(100, 23);
+			this.PlotLimitXMaxText.Text = "600";
+			this.PlotLimitXMaxText.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PlotLimitXMinText_KeyDown);
 			// 
-			// dataBaseToolStripMenuItem
+			// DetectorSystemMenuItem
 			// 
-			this.dataBaseToolStripMenuItem.Name = "dataBaseToolStripMenuItem";
-			this.dataBaseToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
-			this.dataBaseToolStripMenuItem.Text = "Database";
+			this.DetectorSystemMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.LoadedDetectorSystemMenuLabel,
+            this.SelectNewDetectorMenuBtn});
+			this.DetectorSystemMenuItem.Name = "DetectorSystemMenuItem";
+			this.DetectorSystemMenuItem.Size = new System.Drawing.Size(105, 22);
+			this.DetectorSystemMenuItem.Text = "Detector System";
+			// 
+			// LoadedDetectorSystemMenuLabel
+			// 
+			this.LoadedDetectorSystemMenuLabel.Enabled = false;
+			this.LoadedDetectorSystemMenuLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+			this.LoadedDetectorSystemMenuLabel.Name = "LoadedDetectorSystemMenuLabel";
+			this.LoadedDetectorSystemMenuLabel.Size = new System.Drawing.Size(166, 22);
+			this.LoadedDetectorSystemMenuLabel.Text = "Loaded: CASTOR";
+			// 
+			// SelectNewDetectorMenuBtn
+			// 
+			this.SelectNewDetectorMenuBtn.Name = "SelectNewDetectorMenuBtn";
+			this.SelectNewDetectorMenuBtn.Size = new System.Drawing.Size(166, 22);
+			this.SelectNewDetectorMenuBtn.Text = "Select New";
+			this.SelectNewDetectorMenuBtn.Click += new System.EventHandler(this.SelectNewDetectorMenuBtn_Click);
 			// 
 			// Form1
 			// 
@@ -1736,9 +1354,11 @@
 			this.ExtinctionGroupBox.PerformLayout();
 			this.FilterGroupBox.ResumeLayout(false);
 			this.FilterGroupBox.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.FilterGridView)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.SNTargetUpD)).EndInit();
 			this.SourcePropertiesGroupBox.ResumeLayout(false);
 			this.SourcePropertiesGroupBox.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.RedShiftUpDown)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.SersicnUpD)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.SersicReffUpD)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.Chart_Filter)).EndInit();
@@ -1770,11 +1390,6 @@
 		private System.Windows.Forms.ComboBox SourceAGNDrop;
 		private System.Windows.Forms.RadioButton SourceAGNRadBtn;
 		private System.Windows.Forms.GroupBox FilterGroupBox;
-		private System.Windows.Forms.RadioButton FiltergRadBtn;
-		private System.Windows.Forms.RadioButton FilterUVRadBtn;
-		private System.Windows.Forms.RadioButton FilterUVDarkRadBtn;
-		private System.Windows.Forms.RadioButton FilteruWideRadBtn;
-		private System.Windows.Forms.RadioButton FilteruRadBtn;
 		private System.Windows.Forms.Button EscBtn;
 		private System.Windows.Forms.RadioButton SourcePowerLawRadBtn;
 		private System.Windows.Forms.ComboBox SourcePowerLawDrop;
@@ -1793,17 +1408,11 @@
 		private System.Windows.Forms.Button ExtinctionHelpBtn;
 		private System.Windows.Forms.TextBox ExtinctionColumnDensityTxt;
 		private System.Windows.Forms.TextBox ExtinctionAvTxt;
-		private System.Windows.Forms.Label TotalCountUVDarkLabel;
-		private System.Windows.Forms.Label TotalCountUVLabel;
-		private System.Windows.Forms.Label TotalCountuWideLabel;
-		private System.Windows.Forms.Label TotalCountuLabel;
-		private System.Windows.Forms.Label TotalCountgLabel;
 		private System.Windows.Forms.DataVisualization.Charting.Chart Chart_Filter;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label PowerLawAlphaLabel;
 		private System.Windows.Forms.TextBox PowerLawAlphaTxt;
 		private System.Windows.Forms.TextBox PowerLawNormTxt;
-		private System.Windows.Forms.TextBox RedShiftTxt;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.TextBox mIeTxt;
@@ -1811,14 +1420,7 @@
 		private System.Windows.Forms.Button GalaxyTypeHelpBtn;
 		private System.Windows.Forms.Button AGNTypeHelpBtn;
 		private System.Windows.Forms.Button SpectralTypeHelpBtn;
-		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.NumericUpDown SNTargetUpD;
-		private System.Windows.Forms.Label MSNTimegLabel;
-		private System.Windows.Forms.Label MSNTimeuLabel;
-		private System.Windows.Forms.Label MSNTimeuWideLabel;
-		private System.Windows.Forms.Label MSNTimeUVLabel;
-		private System.Windows.Forms.Label MSNTimeUVDarkLabel;
 		private System.Windows.Forms.GroupBox DetectorGroupBox;
 		private System.Windows.Forms.NumericUpDown PlateScaleUpD;
 		private System.Windows.Forms.Label label8;
@@ -1827,29 +1429,11 @@
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.Button SNHelpBtn;
-		private System.Windows.Forms.Label label13;
-		private System.Windows.Forms.Label MaxCountgLabel;
-		private System.Windows.Forms.Label MaxCountuLabel;
-		private System.Windows.Forms.Label MaxCountuWideLabel;
-		private System.Windows.Forms.Label MaxCountUVLabel;
-		private System.Windows.Forms.Label MaxCountUVDarkLabel;
 		private System.Windows.Forms.Label label14;
 		private System.Windows.Forms.TextBox SourceBlackbodyTempTxt;
 		private System.Windows.Forms.Button SaveOutputsBtn;
 		private System.Windows.Forms.ToolTip toolTip1;
 		private System.Windows.Forms.Label label15;
-		private System.Windows.Forms.Label label16;
-		private System.Windows.Forms.Label BGCountgLabel;
-		private System.Windows.Forms.Label BGCountuLabel;
-		private System.Windows.Forms.Label BGCountuWideLabel;
-		private System.Windows.Forms.Label BGCountUVLabel;
-		private System.Windows.Forms.Label BGCountUVDarkLabel;
-		private System.Windows.Forms.Label TSNTimegLabel;
-		private System.Windows.Forms.Label TSNTimeuLabel;
-		private System.Windows.Forms.Label TSNTimeuWideLabel;
-		private System.Windows.Forms.Label TSNTimeUVLabel;
-		private System.Windows.Forms.Label TSNTimeUVDarkLabel;
-		private System.Windows.Forms.Label label22;
 		private System.Windows.Forms.Label FWHMpixelsTxt;
 		private System.Windows.Forms.NumericUpDown SersicReffUpD;
 		private System.Windows.Forms.NumericUpDown SersicnUpD;
@@ -1862,12 +1446,18 @@
 		private System.Windows.Forms.MenuStrip MainMenu;
 		private System.Windows.Forms.ToolStripMenuItem FileMenu;
 		private System.Windows.Forms.ToolStripMenuItem SettingMenu;
-		private System.Windows.Forms.ToolStripMenuItem dataBaseToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem PlotLimitXMaxText;
+		private System.Windows.Forms.ToolStripMenuItem DetectorSystemMenuItem;
+		private System.Windows.Forms.ToolStripMenuItem PlotLimitsMenu;
 		private System.Windows.Forms.ToolStripMenuItem xAxisToolStripMenuItem;
 		private System.Windows.Forms.ToolStripTextBox PlotLimitXMinText;
 		private System.Windows.Forms.ToolStripMenuItem xAxisMaximumToolStripMenuItem;
-		private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
+		private System.Windows.Forms.ToolStripTextBox PlotLimitXMaxText;
+		private System.Windows.Forms.ToolStripMenuItem LoadedDetectorSystemMenuLabel;
+		private System.Windows.Forms.ToolStripMenuItem SelectNewDetectorMenuBtn;
+		private System.Windows.Forms.ComboBox FilterDropDown;
+		private System.Windows.Forms.Label label19;
+		private System.Windows.Forms.DataGridView FilterGridView;
+		private System.Windows.Forms.NumericUpDown RedShiftUpDown;
 	}
 }
 
