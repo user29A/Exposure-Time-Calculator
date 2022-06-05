@@ -48,7 +48,9 @@ namespace Exposure_Time_Calculator
 		double[] FINAL_COUNTS_MAXPIX;
 		double[] FINAL_COUNTS_BG;
 		double[] SN_TIME_MCPS;
-		double[] SN_TIME_TCPS;		
+		double[] SN_TIME_TCPS;
+
+		private WorldCoordinateSolution BSWTWCS;
 
 		public Form1()
 		{
@@ -134,6 +136,12 @@ namespace Exposure_Time_Calculator
 
 			//detector system
 			DETECTORSYSTEM_DIRECTORY = (string)GetReg("CETC", "DSDirectory");
+			if (!Directory.Exists(DETECTORSYSTEM_DIRECTORY))
+			{
+				if (MessageBox.Show("Please direct me to your detector system database folder.", "Exposure Time Calculator...", MessageBoxButtons.OKCancel) == DialogResult.OK)
+					SelectNewDetectorMenuBtn.PerformClick();
+				return;
+			}
 			LoadedDetectorSystemMenuLabel.Text = "Loaded: " + (new DirectoryInfo(DETECTORSYSTEM_DIRECTORY)).Name;
 
 			QE_FILENAME = DETECTORSYSTEM_DIRECTORY + "QE\\QE.fits";
@@ -150,12 +158,7 @@ namespace Exposure_Time_Calculator
 
 			FILTER_FILENAMES = Directory.GetFiles(DETECTORSYSTEM_DIRECTORY + "Filters\\", "*.fits", SearchOption.TopDirectoryOnly);
 			NFILTERS = FILTER_FILENAMES.Length;
-			Array.Sort(FILTER_FILENAMES);
-			FINAL_COUNTS = new double[NFILTERS];
-			FINAL_COUNTS_MAXPIX = new double[NFILTERS];
-			FINAL_COUNTS_BG = new double[NFILTERS];
-			SN_TIME_MCPS = new double[NFILTERS];
-			SN_TIME_TCPS = new double[NFILTERS];
+			Array.Sort(FILTER_FILENAMES);			
 			FILTERS = new double[NFILTERS][];
 			for (int i = 0; i < NFILTERS; i++)
 			{
@@ -183,26 +186,29 @@ namespace Exposure_Time_Calculator
 		private void SelectNewDetectorMenuBtn_Click(object sender, EventArgs e)
 		{
 			FolderBrowserDialog fbd = new FolderBrowserDialog();
+			fbd.Description = "Please select the detector database folder...";
 			fbd.SelectedPath = DETECTORSYSTEM_DIRECTORY;
 			if (fbd.ShowDialog() == DialogResult.Cancel)
 				return;
 
 			DETECTORSYSTEM_DIRECTORY = fbd.SelectedPath + "\\";
 			SetReg("CETC", "DSDirectory", DETECTORSYSTEM_DIRECTORY);
-			LoadedDetectorSystemMenuLabel.Text = "Loaded: " + (new DirectoryInfo(DETECTORSYSTEM_DIRECTORY)).Name;
+			//LoadedDetectorSystemMenuLabel.Text = "Loaded: " + (new DirectoryInfo(DETECTORSYSTEM_DIRECTORY)).Name;
 
-			//analyze directory for relevant entries
-			QE_FILENAME = DETECTORSYSTEM_DIRECTORY + "QE\\QE.fits";
-			MIRROR_REFL_FILENAME = DETECTORSYSTEM_DIRECTORY + "Reflectivity\\reflectivity.fits";
-			FILTER_FILENAMES = Directory.GetFiles(DETECTORSYSTEM_DIRECTORY + "Filters\\", "*.fits", SearchOption.TopDirectoryOnly);
-			FILTER_NAMES = new string[NFILTERS];
-			for (int i = 0; i < NFILTERS; i++)
-				FILTER_NAMES[i] = (new FileInfo(FILTER_FILENAMES[i])).Name.Replace(".fits", "");
+			Form1_Load(sender, e);
 		}
 
 		private void PlotLimitXMinText_KeyDown(object sender, KeyEventArgs e)
 		{
-			SetReg("CETC", ((ToolStripTextBox)sender).Name, ((ToolStripTextBox)sender).Text);
+			if (FIRSTSLOAD)
+				return;
+
+			if (e.KeyCode == Keys.Return)
+			{
+				e.SuppressKeyPress = true;
+				SetReg("CETC", ((ToolStripTextBox)sender).Name, ((ToolStripTextBox)sender).Text);
+				ThroughPutETC();
+			}
 		}
 
 		void SaveOutPuts()
@@ -268,7 +274,7 @@ namespace Exposure_Time_Calculator
 
 		void EscBtn_Click(System.Object sender, System.EventArgs e)
 		{
-			if (MessageBox.Show("Are you sure you want to exit?", "Exit", MessageBoxButtons.YesNo) == DialogResult.No)
+			if (MessageBox.Show("Are you sure you want to exit?", "Exit", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
 				return;
 
 			Application.Exit();
@@ -291,6 +297,7 @@ namespace Exposure_Time_Calculator
 			else
 				for (int i = 0; i < NELEMENTS; i++)
 					Chart_Source.Series[0].Points.AddXY(LAMBDA_NM[i], SOURCE_FLUX[i]);
+
 			Chart_Source.ChartAreas[0].AxisX.Minimum = PLOT_XMIN;
 			Chart_Source.ChartAreas[0].AxisX.Maximum = PLOT_XMAX;
 		}
@@ -986,47 +993,41 @@ namespace Exposure_Time_Calculator
 			if (e.ColumnIndex == 0)
 				if (e.RowIndex >= 0)
 					FilterDropDown.SelectedIndex = e.RowIndex;
-		}		
+		}
+
+		private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			if (tabControl1.SelectedIndex == 0)
+			{
+				ETCMenu.Enabled = true;
+				BSWTMenu.Enabled = false;
+			}
+			else if (tabControl1.SelectedIndex == 1)
+			{
+				ETCMenu.Enabled = false;
+				BSWTMenu.Enabled = true;
+			}
+		}
+
+		private void FileMenuQuit_Click(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
+
+		private void TabBSWT_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+		{
+			if (e.KeyCode == Keys.Escape)
+				EscBtn.PerformClick();
+		}
+
+		private void tabControl1_KeyDown(object sender, KeyEventArgs e)
+		{
+			if (e.KeyCode == Keys.Escape)
+				EscBtn.PerformClick();
+		}
 
 		void FormatLabels()
 		{
-			//uvdark, uv, uwide, u, g
-			//TotalCountUVDarkLabel.Text = FINAL_COUNTS[0].ToString("e1");
-			//TotalCountUVLabel.Text = FINAL_COUNTS[1].ToString("e1");
-			//TotalCountuWideLabel.Text = FINAL_COUNTS[2].ToString("e1");
-			//TotalCountuLabel.Text = FINAL_COUNTS[3].ToString("e1");
-			//TotalCountgLabel.Text = FINAL_COUNTS[4].ToString("e1");
-
-			////uvdark, uv, uwide, u, g
-			//MaxCountUVDarkLabel.Text = FINAL_COUNTS_MAXPIX[0].ToString("e1");
-			//MaxCountUVLabel.Text = FINAL_COUNTS_MAXPIX[1].ToString("e1");
-			//MaxCountuWideLabel.Text = FINAL_COUNTS_MAXPIX[2].ToString("e1");
-			//MaxCountuLabel.Text = FINAL_COUNTS_MAXPIX[3].ToString("e1");
-			//MaxCountgLabel.Text = FINAL_COUNTS_MAXPIX[4].ToString("e1");
-
-			////uvdark, uv, uwide, u, g
-			//BGCountUVDarkLabel.Text = (/*(double)(APERTURENPIX) * */FINAL_COUNTS_BG[0]).ToString("e1");
-			//BGCountUVLabel.Text = (/*(double)(APERTURENPIX) * */FINAL_COUNTS_BG[1]).ToString("e1");
-			//BGCountuWideLabel.Text = (/*(double)(APERTURENPIX) * */FINAL_COUNTS_BG[2]).ToString("e1");
-			//BGCountuLabel.Text = (/*(double)(APERTURENPIX) * */FINAL_COUNTS_BG[3]).ToString("e1");
-			//BGCountgLabel.Text = (/*(double)(APERTURENPIX) * */FINAL_COUNTS_BG[4]).ToString("e1");
-
-			////uvdark, uv, uwide, u, g
-			//MSNTimeUVDarkLabel.Text = SN_TIME_MCPS[0].ToString("e1");
-			//MSNTimeUVLabel.Text = SN_TIME_MCPS[1].ToString("e1");
-			//MSNTimeuWideLabel.Text = SN_TIME_MCPS[2].ToString("e1");
-			//MSNTimeuLabel.Text = SN_TIME_MCPS[3].ToString("e1");
-			//MSNTimegLabel.Text = SN_TIME_MCPS[4].ToString("e1");
-
-			////uvdark, uv, uwide, u, g
-			//TSNTimeUVDarkLabel.Text = SN_TIME_TCPS[0].ToString("e1");
-			//TSNTimeUVLabel.Text = SN_TIME_TCPS[1].ToString("e1");
-			//TSNTimeuWideLabel.Text = SN_TIME_TCPS[2].ToString("e1");
-			//TSNTimeuLabel.Text = SN_TIME_TCPS[3].ToString("e1");
-			//TSNTimegLabel.Text = SN_TIME_TCPS[4].ToString("e1");
-
-
-
 			System.Data.DataTable dt = new System.Data.DataTable();
 			dt.Columns.Add("Filter", Type.GetType("System.String"));
 			dt.Columns.Add("Max CPS", Type.GetType("System.String"));

@@ -7,6 +7,9 @@ namespace Exposure_Time_Calculator
 	{
 		void ThroughPutETC()
 		{
+			if (FIRSTSLOAD)
+				return;
+
 			double psfFWHM = (double)FWHMUpD.Value;//arcsec
 			double platescale = (double)PlateScaleUpD.Value;//arcsec/pixel
 			int apertureHWpix = (int)Math.Ceiling(3 * psfFWHM / 2.355 / platescale);//pixels
@@ -14,6 +17,12 @@ namespace Exposure_Time_Calculator
 			double RN = (double)ReadNoiseUpD.Value;
 			double DR = ((double)DarkRateUpD.Value) / 60;
 			double CR = 0;//cosmic ray rate
+
+			FINAL_COUNTS = new double[NFILTERS];
+			FINAL_COUNTS_MAXPIX = new double[NFILTERS];
+			FINAL_COUNTS_BG = new double[NFILTERS];
+			SN_TIME_MCPS = new double[NFILTERS];
+			SN_TIME_TCPS = new double[NFILTERS];
 
 			APERTURENPIX = 0;
 			if (ISPOINTSOURCE)
@@ -182,6 +191,8 @@ namespace Exposure_Time_Calculator
 
 			Chart_Filter.ChartAreas[0].AxisX.Minimum = PLOT_XMIN;
 			Chart_Filter.ChartAreas[0].AxisX.Maximum = PLOT_XMAX;
+			Chart_Filter.ChartAreas[0].AxisY.Minimum = 0;
+			Chart_Filter.ChartAreas[0].AxisY.Maximum = 1;
 
 			Chart_Final.ChartAreas[0].AxisX.Minimum = PLOT_XMIN;
 			Chart_Final.ChartAreas[0].AxisX.Maximum = PLOT_XMAX;

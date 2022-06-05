@@ -72,7 +72,6 @@
 			this.SNTargetUpD = new System.Windows.Forms.NumericUpDown();
 			this.label15 = new System.Windows.Forms.Label();
 			this.SNHelpBtn = new System.Windows.Forms.Button();
-			this.EscBtn = new System.Windows.Forms.Button();
 			this.SourcePropertiesGroupBox = new System.Windows.Forms.GroupBox();
 			this.RedShiftUpDown = new System.Windows.Forms.NumericUpDown();
 			this.SersicnUpD = new System.Windows.Forms.NumericUpDown();
@@ -106,19 +105,54 @@
 			this.FWHMUpD = new System.Windows.Forms.NumericUpDown();
 			this.label9 = new System.Windows.Forms.Label();
 			this.label8 = new System.Windows.Forms.Label();
-			this.SaveOutputsBtn = new System.Windows.Forms.Button();
 			this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+			this.DecTargetTxt = new System.Windows.Forms.TextBox();
+			this.RATargetTxt = new System.Windows.Forms.TextBox();
+			this.BSWTForceQueryChck = new System.Windows.Forms.CheckBox();
 			this.MainMenu = new System.Windows.Forms.MenuStrip();
 			this.FileMenu = new System.Windows.Forms.ToolStripMenuItem();
-			this.SettingMenu = new System.Windows.Forms.ToolStripMenuItem();
+			this.FileMenuQuit = new System.Windows.Forms.ToolStripMenuItem();
+			this.ETCMenu = new System.Windows.Forms.ToolStripMenuItem();
+			this.DetectorSystemMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.LoadedDetectorSystemMenuLabel = new System.Windows.Forms.ToolStripMenuItem();
+			this.SelectNewDetectorMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
 			this.PlotLimitsMenu = new System.Windows.Forms.ToolStripMenuItem();
 			this.xAxisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.PlotLimitXMinText = new System.Windows.Forms.ToolStripTextBox();
 			this.xAxisMaximumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.PlotLimitXMaxText = new System.Windows.Forms.ToolStripTextBox();
-			this.DetectorSystemMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.LoadedDetectorSystemMenuLabel = new System.Windows.Forms.ToolStripMenuItem();
-			this.SelectNewDetectorMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
+			this.BSWTMenu = new System.Windows.Forms.ToolStripMenuItem();
+			this.tabControl1 = new System.Windows.Forms.TabControl();
+			this.TabETC = new System.Windows.Forms.TabPage();
+			this.SaveOutputsBtn = new System.Windows.Forms.Button();
+			this.EscBtn = new System.Windows.Forms.Button();
+			this.TabBSWT = new System.Windows.Forms.TabPage();
+			this.BSWTMaxBrightSourcesUpD = new System.Windows.Forms.NumericUpDown();
+			this.label29 = new System.Windows.Forms.Label();
+			this.label22 = new System.Windows.Forms.Label();
+			this.BSWTVerticalPixUpD = new System.Windows.Forms.NumericUpDown();
+			this.label20 = new System.Windows.Forms.Label();
+			this.BSWTHorizontalPixUpD = new System.Windows.Forms.NumericUpDown();
+			this.label21 = new System.Windows.Forms.Label();
+			this.label16 = new System.Windows.Forms.Label();
+			this.BSWTPlateScaleUpD = new System.Windows.Forms.NumericUpDown();
+			this.label7 = new System.Windows.Forms.Label();
+			this.label13 = new System.Windows.Forms.Label();
+			this.BSWTMessageBox = new System.Windows.Forms.ListBox();
+			this.BSWTExecuteBtn = new System.Windows.Forms.Button();
+			this.BSWTPictureBox = new System.Windows.Forms.PictureBox();
+			this.FieldBufferUpD = new System.Windows.Forms.NumericUpDown();
+			this.label27 = new System.Windows.Forms.Label();
+			this.label28 = new System.Windows.Forms.Label();
+			this.BSWTFilterDrop = new System.Windows.Forms.ComboBox();
+			this.label26 = new System.Windows.Forms.Label();
+			this.BSWTCatalogueDrop = new System.Windows.Forms.ComboBox();
+			this.label25 = new System.Windows.Forms.Label();
+			this.label24 = new System.Windows.Forms.Label();
+			this.FieldShapeBtn = new System.Windows.Forms.Button();
+			this.DecTargetBtn = new System.Windows.Forms.Button();
+			this.RATargetBtn = new System.Windows.Forms.Button();
+			this.BSWTMagLimitUpD = new System.Windows.Forms.NumericUpDown();
 			((System.ComponentModel.ISupportInitialize)(this.Chart_Source)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.Chart_Final)).BeginInit();
 			this.SourceTypeGroupBox.SuspendLayout();
@@ -138,6 +172,16 @@
 			((System.ComponentModel.ISupportInitialize)(this.PlateScaleUpD)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.FWHMUpD)).BeginInit();
 			this.MainMenu.SuspendLayout();
+			this.tabControl1.SuspendLayout();
+			this.TabETC.SuspendLayout();
+			this.TabBSWT.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.BSWTMaxBrightSourcesUpD)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.BSWTVerticalPixUpD)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.BSWTHorizontalPixUpD)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.BSWTPlateScaleUpD)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.BSWTPictureBox)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.FieldBufferUpD)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.BSWTMagLimitUpD)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// Chart_Source
@@ -151,7 +195,7 @@
 			chartArea1.BackSecondaryColor = System.Drawing.Color.Silver;
 			chartArea1.Name = "ChartArea1";
 			this.Chart_Source.ChartAreas.Add(chartArea1);
-			this.Chart_Source.Location = new System.Drawing.Point(12, 48);
+			this.Chart_Source.Location = new System.Drawing.Point(6, 6);
 			this.Chart_Source.Name = "Chart_Source";
 			series1.BorderColor = System.Drawing.Color.White;
 			series1.ChartArea = "ChartArea1";
@@ -179,7 +223,7 @@
 			chartArea2.BackSecondaryColor = System.Drawing.Color.Silver;
 			chartArea2.Name = "ChartArea1";
 			this.Chart_Final.ChartAreas.Add(chartArea2);
-			this.Chart_Final.Location = new System.Drawing.Point(12, 576);
+			this.Chart_Final.Location = new System.Drawing.Point(6, 534);
 			this.Chart_Final.Name = "Chart_Final";
 			series2.BorderColor = System.Drawing.Color.White;
 			series2.ChartArea = "ChartArea1";
@@ -215,7 +259,7 @@
 			this.SourceTypeGroupBox.Controls.Add(this.SourceStarDrop);
 			this.SourceTypeGroupBox.Controls.Add(this.SourceStarRadBtn);
 			this.SourceTypeGroupBox.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.SourceTypeGroupBox.Location = new System.Drawing.Point(845, 24);
+			this.SourceTypeGroupBox.Location = new System.Drawing.Point(835, 11);
 			this.SourceTypeGroupBox.Name = "SourceTypeGroupBox";
 			this.SourceTypeGroupBox.Size = new System.Drawing.Size(247, 165);
 			this.SourceTypeGroupBox.TabIndex = 5;
@@ -473,7 +517,7 @@
 			this.ExtinctionGroupBox.Controls.Add(this.ExtinctionRvTxt);
 			this.ExtinctionGroupBox.Controls.Add(this.label4);
 			this.ExtinctionGroupBox.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.ExtinctionGroupBox.Location = new System.Drawing.Point(845, 195);
+			this.ExtinctionGroupBox.Location = new System.Drawing.Point(835, 182);
 			this.ExtinctionGroupBox.Name = "ExtinctionGroupBox";
 			this.ExtinctionGroupBox.Size = new System.Drawing.Size(301, 140);
 			this.ExtinctionGroupBox.TabIndex = 6;
@@ -583,7 +627,7 @@
 			this.FilterGroupBox.Controls.Add(this.label15);
 			this.FilterGroupBox.Controls.Add(this.SNHelpBtn);
 			this.FilterGroupBox.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.FilterGroupBox.Location = new System.Drawing.Point(845, 341);
+			this.FilterGroupBox.Location = new System.Drawing.Point(835, 328);
 			this.FilterGroupBox.Name = "FilterGroupBox";
 			this.FilterGroupBox.Size = new System.Drawing.Size(596, 243);
 			this.FilterGroupBox.TabIndex = 9;
@@ -603,6 +647,7 @@
 			this.FilterGridView.Name = "FilterGridView";
 			this.FilterGridView.ReadOnly = true;
 			this.FilterGridView.RowHeadersVisible = false;
+			this.FilterGridView.RowHeadersWidth = 62;
 			this.FilterGridView.Size = new System.Drawing.Size(446, 183);
 			this.FilterGridView.TabIndex = 45;
 			this.FilterGridView.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.FilterGridView_CellMouseDown);
@@ -670,17 +715,6 @@
 			this.SNHelpBtn.UseVisualStyleBackColor = true;
 			this.SNHelpBtn.Click += new System.EventHandler(this.SNHelpBtn_Click);
 			// 
-			// EscBtn
-			// 
-			this.EscBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.EscBtn.Location = new System.Drawing.Point(1359, 807);
-			this.EscBtn.Name = "EscBtn";
-			this.EscBtn.Size = new System.Drawing.Size(75, 23);
-			this.EscBtn.TabIndex = 12;
-			this.EscBtn.Text = "Quit (Esc)";
-			this.EscBtn.UseVisualStyleBackColor = true;
-			this.EscBtn.Click += new System.EventHandler(this.EscBtn_Click);
-			// 
 			// SourcePropertiesGroupBox
 			// 
 			this.SourcePropertiesGroupBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -703,7 +737,7 @@
 			this.SourcePropertiesGroupBox.Controls.Add(this.mvRadBtn);
 			this.SourcePropertiesGroupBox.Controls.Add(this.DistanceRadBtn);
 			this.SourcePropertiesGroupBox.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.SourcePropertiesGroupBox.Location = new System.Drawing.Point(1098, 24);
+			this.SourcePropertiesGroupBox.Location = new System.Drawing.Point(1088, 11);
 			this.SourcePropertiesGroupBox.Name = "SourcePropertiesGroupBox";
 			this.SourcePropertiesGroupBox.Size = new System.Drawing.Size(343, 165);
 			this.SourcePropertiesGroupBox.TabIndex = 13;
@@ -954,13 +988,12 @@
 			this.Chart_Filter.BackColor = System.Drawing.Color.Transparent;
 			this.Chart_Filter.BorderlineColor = System.Drawing.Color.Transparent;
 			chartArea3.AxisX.Title = "Wavelength";
-			chartArea3.AxisY.LabelStyle.Format = "e1";
 			chartArea3.BackColor = System.Drawing.Color.DimGray;
 			chartArea3.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.TopBottom;
 			chartArea3.BackSecondaryColor = System.Drawing.Color.Silver;
 			chartArea3.Name = "ChartArea1";
 			this.Chart_Filter.ChartAreas.Add(chartArea3);
-			this.Chart_Filter.Location = new System.Drawing.Point(12, 312);
+			this.Chart_Filter.Location = new System.Drawing.Point(6, 270);
 			this.Chart_Filter.Name = "Chart_Filter";
 			series3.BorderColor = System.Drawing.Color.White;
 			series3.ChartArea = "ChartArea1";
@@ -982,7 +1015,7 @@
 			this.ShowLocalFlux.AutoSize = true;
 			this.ShowLocalFlux.Checked = true;
 			this.ShowLocalFlux.CheckState = System.Windows.Forms.CheckState.Checked;
-			this.ShowLocalFlux.Location = new System.Drawing.Point(122, 46);
+			this.ShowLocalFlux.Location = new System.Drawing.Point(116, 13);
 			this.ShowLocalFlux.Name = "ShowLocalFlux";
 			this.ShowLocalFlux.Size = new System.Drawing.Size(52, 17);
 			this.ShowLocalFlux.TabIndex = 15;
@@ -1005,7 +1038,7 @@
 			this.DetectorGroupBox.Controls.Add(this.label9);
 			this.DetectorGroupBox.Controls.Add(this.label8);
 			this.DetectorGroupBox.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.DetectorGroupBox.Location = new System.Drawing.Point(1152, 195);
+			this.DetectorGroupBox.Location = new System.Drawing.Point(1142, 182);
 			this.DetectorGroupBox.Name = "DetectorGroupBox";
 			this.DetectorGroupBox.Size = new System.Drawing.Size(232, 140);
 			this.DetectorGroupBox.TabIndex = 16;
@@ -1208,16 +1241,6 @@
 			this.label8.TabIndex = 0;
 			this.label8.Text = "Plate Scale (arcsec/pixel)";
 			// 
-			// SaveOutputsBtn
-			// 
-			this.SaveOutputsBtn.Location = new System.Drawing.Point(1343, 778);
-			this.SaveOutputsBtn.Name = "SaveOutputsBtn";
-			this.SaveOutputsBtn.Size = new System.Drawing.Size(91, 23);
-			this.SaveOutputsBtn.TabIndex = 18;
-			this.SaveOutputsBtn.Text = "Save Outputs";
-			this.SaveOutputsBtn.UseVisualStyleBackColor = true;
-			this.SaveOutputsBtn.Click += new System.EventHandler(this.SaveOutputsBtn_Click);
-			// 
 			// toolTip1
 			// 
 			this.toolTip1.AutomaticDelay = 200;
@@ -1225,14 +1248,42 @@
 			this.toolTip1.InitialDelay = 200;
 			this.toolTip1.ReshowDelay = 40;
 			// 
+			// DecTargetTxt
+			// 
+			this.DecTargetTxt.Location = new System.Drawing.Point(277, 8);
+			this.DecTargetTxt.Name = "DecTargetTxt";
+			this.DecTargetTxt.Size = new System.Drawing.Size(101, 20);
+			this.DecTargetTxt.TabIndex = 12;
+			this.toolTip1.SetToolTip(this.DecTargetTxt, "degrees or sexagesimal format");
+			// 
+			// RATargetTxt
+			// 
+			this.RATargetTxt.Location = new System.Drawing.Point(89, 8);
+			this.RATargetTxt.Name = "RATargetTxt";
+			this.RATargetTxt.Size = new System.Drawing.Size(101, 20);
+			this.RATargetTxt.TabIndex = 3;
+			this.toolTip1.SetToolTip(this.RATargetTxt, "degrees or sexagesimal format");
+			// 
+			// BSWTForceQueryChck
+			// 
+			this.BSWTForceQueryChck.AutoSize = true;
+			this.BSWTForceQueryChck.Location = new System.Drawing.Point(110, 223);
+			this.BSWTForceQueryChck.Name = "BSWTForceQueryChck";
+			this.BSWTForceQueryChck.Size = new System.Drawing.Size(131, 17);
+			this.BSWTForceQueryChck.TabIndex = 51;
+			this.BSWTForceQueryChck.Text = "Force New Astroquery";
+			this.toolTip1.SetToolTip(this.BSWTForceQueryChck, "Forces a fresh download of the astroquery table...helpful if the field target has" +
+        "n\'t changed but the field properties have.");
+			this.BSWTForceQueryChck.UseVisualStyleBackColor = true;
+			// 
 			// MainMenu
 			// 
 			this.MainMenu.BackColor = System.Drawing.Color.Silver;
 			this.MainMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
 			this.MainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileMenu,
-            this.SettingMenu,
-            this.DetectorSystemMenuItem});
+            this.ETCMenu,
+            this.BSWTMenu});
 			this.MainMenu.Location = new System.Drawing.Point(0, 0);
 			this.MainMenu.Name = "MainMenu";
 			this.MainMenu.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
@@ -1242,17 +1293,51 @@
 			// 
 			// FileMenu
 			// 
+			this.FileMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.FileMenuQuit});
 			this.FileMenu.Name = "FileMenu";
 			this.FileMenu.Size = new System.Drawing.Size(37, 22);
 			this.FileMenu.Text = "File";
 			// 
-			// SettingMenu
+			// FileMenuQuit
 			// 
-			this.SettingMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+			this.FileMenuQuit.Name = "FileMenuQuit";
+			this.FileMenuQuit.Size = new System.Drawing.Size(125, 22);
+			this.FileMenuQuit.Text = "Quit (Esc)";
+			this.FileMenuQuit.Click += new System.EventHandler(this.FileMenuQuit_Click);
+			// 
+			// ETCMenu
+			// 
+			this.ETCMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.DetectorSystemMenuItem,
             this.PlotLimitsMenu});
-			this.SettingMenu.Name = "SettingMenu";
-			this.SettingMenu.Size = new System.Drawing.Size(61, 22);
-			this.SettingMenu.Text = "Settings";
+			this.ETCMenu.Name = "ETCMenu";
+			this.ETCMenu.Size = new System.Drawing.Size(153, 22);
+			this.ETCMenu.Text = "Exposure Time Calculator";
+			// 
+			// DetectorSystemMenuItem
+			// 
+			this.DetectorSystemMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.LoadedDetectorSystemMenuLabel,
+            this.SelectNewDetectorMenuBtn});
+			this.DetectorSystemMenuItem.Name = "DetectorSystemMenuItem";
+			this.DetectorSystemMenuItem.Size = new System.Drawing.Size(160, 22);
+			this.DetectorSystemMenuItem.Text = "Detector System";
+			// 
+			// LoadedDetectorSystemMenuLabel
+			// 
+			this.LoadedDetectorSystemMenuLabel.Enabled = false;
+			this.LoadedDetectorSystemMenuLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+			this.LoadedDetectorSystemMenuLabel.Name = "LoadedDetectorSystemMenuLabel";
+			this.LoadedDetectorSystemMenuLabel.Size = new System.Drawing.Size(166, 22);
+			this.LoadedDetectorSystemMenuLabel.Text = "Loaded: CASTOR";
+			// 
+			// SelectNewDetectorMenuBtn
+			// 
+			this.SelectNewDetectorMenuBtn.Name = "SelectNewDetectorMenuBtn";
+			this.SelectNewDetectorMenuBtn.Size = new System.Drawing.Size(166, 22);
+			this.SelectNewDetectorMenuBtn.Text = "Select New";
+			this.SelectNewDetectorMenuBtn.Click += new System.EventHandler(this.SelectNewDetectorMenuBtn_Click);
 			// 
 			// PlotLimitsMenu
 			// 
@@ -1262,7 +1347,7 @@
             this.xAxisMaximumToolStripMenuItem,
             this.PlotLimitXMaxText});
 			this.PlotLimitsMenu.Name = "PlotLimitsMenu";
-			this.PlotLimitsMenu.Size = new System.Drawing.Size(130, 22);
+			this.PlotLimitsMenu.Size = new System.Drawing.Size(160, 22);
 			this.PlotLimitsMenu.Text = "Plot Limits";
 			// 
 			// xAxisToolStripMenuItem
@@ -1293,29 +1378,447 @@
 			this.PlotLimitXMaxText.Text = "600";
 			this.PlotLimitXMaxText.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PlotLimitXMinText_KeyDown);
 			// 
-			// DetectorSystemMenuItem
+			// BSWTMenu
 			// 
-			this.DetectorSystemMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.LoadedDetectorSystemMenuLabel,
-            this.SelectNewDetectorMenuBtn});
-			this.DetectorSystemMenuItem.Name = "DetectorSystemMenuItem";
-			this.DetectorSystemMenuItem.Size = new System.Drawing.Size(105, 22);
-			this.DetectorSystemMenuItem.Text = "Detector System";
+			this.BSWTMenu.Name = "BSWTMenu";
+			this.BSWTMenu.Size = new System.Drawing.Size(49, 22);
+			this.BSWTMenu.Text = "BSWT";
 			// 
-			// LoadedDetectorSystemMenuLabel
+			// tabControl1
 			// 
-			this.LoadedDetectorSystemMenuLabel.Enabled = false;
-			this.LoadedDetectorSystemMenuLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-			this.LoadedDetectorSystemMenuLabel.Name = "LoadedDetectorSystemMenuLabel";
-			this.LoadedDetectorSystemMenuLabel.Size = new System.Drawing.Size(166, 22);
-			this.LoadedDetectorSystemMenuLabel.Text = "Loaded: CASTOR";
+			this.tabControl1.Controls.Add(this.TabETC);
+			this.tabControl1.Controls.Add(this.TabBSWT);
+			this.tabControl1.Location = new System.Drawing.Point(0, 24);
+			this.tabControl1.Name = "tabControl1";
+			this.tabControl1.SelectedIndex = 0;
+			this.tabControl1.Size = new System.Drawing.Size(1446, 818);
+			this.tabControl1.TabIndex = 20;
+			this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+			this.tabControl1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tabControl1_KeyDown);
 			// 
-			// SelectNewDetectorMenuBtn
+			// TabETC
 			// 
-			this.SelectNewDetectorMenuBtn.Name = "SelectNewDetectorMenuBtn";
-			this.SelectNewDetectorMenuBtn.Size = new System.Drawing.Size(166, 22);
-			this.SelectNewDetectorMenuBtn.Text = "Select New";
-			this.SelectNewDetectorMenuBtn.Click += new System.EventHandler(this.SelectNewDetectorMenuBtn_Click);
+			this.TabETC.BackColor = System.Drawing.Color.Silver;
+			this.TabETC.Controls.Add(this.Chart_Filter);
+			this.TabETC.Controls.Add(this.Chart_Final);
+			this.TabETC.Controls.Add(this.SaveOutputsBtn);
+			this.TabETC.Controls.Add(this.EscBtn);
+			this.TabETC.Controls.Add(this.DetectorGroupBox);
+			this.TabETC.Controls.Add(this.SourceTypeGroupBox);
+			this.TabETC.Controls.Add(this.ShowLocalFlux);
+			this.TabETC.Controls.Add(this.ExtinctionGroupBox);
+			this.TabETC.Controls.Add(this.SourcePropertiesGroupBox);
+			this.TabETC.Controls.Add(this.FilterGroupBox);
+			this.TabETC.Controls.Add(this.Chart_Source);
+			this.TabETC.Location = new System.Drawing.Point(4, 22);
+			this.TabETC.Name = "TabETC";
+			this.TabETC.Padding = new System.Windows.Forms.Padding(3);
+			this.TabETC.Size = new System.Drawing.Size(1438, 792);
+			this.TabETC.TabIndex = 0;
+			this.TabETC.Text = "ETC";
+			// 
+			// SaveOutputsBtn
+			// 
+			this.SaveOutputsBtn.Location = new System.Drawing.Point(1340, 733);
+			this.SaveOutputsBtn.Name = "SaveOutputsBtn";
+			this.SaveOutputsBtn.Size = new System.Drawing.Size(91, 23);
+			this.SaveOutputsBtn.TabIndex = 18;
+			this.SaveOutputsBtn.Text = "Save Outputs";
+			this.SaveOutputsBtn.UseVisualStyleBackColor = true;
+			this.SaveOutputsBtn.Click += new System.EventHandler(this.SaveOutputsBtn_Click);
+			// 
+			// EscBtn
+			// 
+			this.EscBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+			this.EscBtn.Location = new System.Drawing.Point(1356, 762);
+			this.EscBtn.Name = "EscBtn";
+			this.EscBtn.Size = new System.Drawing.Size(75, 23);
+			this.EscBtn.TabIndex = 12;
+			this.EscBtn.Text = "Quit (Esc)";
+			this.EscBtn.UseVisualStyleBackColor = true;
+			this.EscBtn.Click += new System.EventHandler(this.EscBtn_Click);
+			// 
+			// TabBSWT
+			// 
+			this.TabBSWT.BackColor = System.Drawing.Color.Silver;
+			this.TabBSWT.Controls.Add(this.BSWTMagLimitUpD);
+			this.TabBSWT.Controls.Add(this.BSWTForceQueryChck);
+			this.TabBSWT.Controls.Add(this.BSWTMaxBrightSourcesUpD);
+			this.TabBSWT.Controls.Add(this.label29);
+			this.TabBSWT.Controls.Add(this.label22);
+			this.TabBSWT.Controls.Add(this.BSWTVerticalPixUpD);
+			this.TabBSWT.Controls.Add(this.label20);
+			this.TabBSWT.Controls.Add(this.BSWTHorizontalPixUpD);
+			this.TabBSWT.Controls.Add(this.label21);
+			this.TabBSWT.Controls.Add(this.label16);
+			this.TabBSWT.Controls.Add(this.BSWTPlateScaleUpD);
+			this.TabBSWT.Controls.Add(this.label7);
+			this.TabBSWT.Controls.Add(this.label13);
+			this.TabBSWT.Controls.Add(this.BSWTMessageBox);
+			this.TabBSWT.Controls.Add(this.BSWTExecuteBtn);
+			this.TabBSWT.Controls.Add(this.BSWTPictureBox);
+			this.TabBSWT.Controls.Add(this.FieldBufferUpD);
+			this.TabBSWT.Controls.Add(this.label27);
+			this.TabBSWT.Controls.Add(this.label28);
+			this.TabBSWT.Controls.Add(this.BSWTFilterDrop);
+			this.TabBSWT.Controls.Add(this.label26);
+			this.TabBSWT.Controls.Add(this.BSWTCatalogueDrop);
+			this.TabBSWT.Controls.Add(this.label25);
+			this.TabBSWT.Controls.Add(this.label24);
+			this.TabBSWT.Controls.Add(this.FieldShapeBtn);
+			this.TabBSWT.Controls.Add(this.DecTargetBtn);
+			this.TabBSWT.Controls.Add(this.RATargetBtn);
+			this.TabBSWT.Controls.Add(this.DecTargetTxt);
+			this.TabBSWT.Controls.Add(this.RATargetTxt);
+			this.TabBSWT.Location = new System.Drawing.Point(4, 22);
+			this.TabBSWT.Name = "TabBSWT";
+			this.TabBSWT.Padding = new System.Windows.Forms.Padding(3);
+			this.TabBSWT.Size = new System.Drawing.Size(1438, 792);
+			this.TabBSWT.TabIndex = 1;
+			this.TabBSWT.Text = "BSWT";
+			this.TabBSWT.Layout += new System.Windows.Forms.LayoutEventHandler(this.TabBSWT_Layout);
+			this.TabBSWT.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.TabBSWT_PreviewKeyDown);
+			// 
+			// BSWTMaxBrightSourcesUpD
+			// 
+			this.BSWTMaxBrightSourcesUpD.Location = new System.Drawing.Point(109, 246);
+			this.BSWTMaxBrightSourcesUpD.Maximum = new decimal(new int[] {
+            500,
+            0,
+            0,
+            0});
+			this.BSWTMaxBrightSourcesUpD.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+			this.BSWTMaxBrightSourcesUpD.Name = "BSWTMaxBrightSourcesUpD";
+			this.BSWTMaxBrightSourcesUpD.Size = new System.Drawing.Size(56, 20);
+			this.BSWTMaxBrightSourcesUpD.TabIndex = 50;
+			this.BSWTMaxBrightSourcesUpD.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+			// 
+			// label29
+			// 
+			this.label29.AutoSize = true;
+			this.label29.Location = new System.Drawing.Point(171, 250);
+			this.label29.Name = "label29";
+			this.label29.Size = new System.Drawing.Size(90, 13);
+			this.label29.TabIndex = 49;
+			this.label29.Text = "Brightest Sources";
+			// 
+			// label22
+			// 
+			this.label22.Location = new System.Drawing.Point(278, 83);
+			this.label22.Name = "label22";
+			this.label22.Size = new System.Drawing.Size(41, 27);
+			this.label22.TabIndex = 48;
+			this.label22.Text = "vertical pixels";
+			this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// BSWTVerticalPixUpD
+			// 
+			this.BSWTVerticalPixUpD.Increment = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+			this.BSWTVerticalPixUpD.Location = new System.Drawing.Point(216, 86);
+			this.BSWTVerticalPixUpD.Maximum = new decimal(new int[] {
+            50000,
+            0,
+            0,
+            0});
+			this.BSWTVerticalPixUpD.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+			this.BSWTVerticalPixUpD.Name = "BSWTVerticalPixUpD";
+			this.BSWTVerticalPixUpD.Size = new System.Drawing.Size(56, 20);
+			this.BSWTVerticalPixUpD.TabIndex = 47;
+			this.BSWTVerticalPixUpD.Value = new decimal(new int[] {
+            4096,
+            0,
+            0,
+            0});
+			// 
+			// label20
+			// 
+			this.label20.Location = new System.Drawing.Point(156, 83);
+			this.label20.Name = "label20";
+			this.label20.Size = new System.Drawing.Size(54, 27);
+			this.label20.TabIndex = 46;
+			this.label20.Text = "horizontal pixels";
+			this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// BSWTHorizontalPixUpD
+			// 
+			this.BSWTHorizontalPixUpD.Increment = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+			this.BSWTHorizontalPixUpD.Location = new System.Drawing.Point(98, 86);
+			this.BSWTHorizontalPixUpD.Maximum = new decimal(new int[] {
+            50000,
+            0,
+            0,
+            0});
+			this.BSWTHorizontalPixUpD.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+			this.BSWTHorizontalPixUpD.Name = "BSWTHorizontalPixUpD";
+			this.BSWTHorizontalPixUpD.Size = new System.Drawing.Size(56, 20);
+			this.BSWTHorizontalPixUpD.TabIndex = 45;
+			this.BSWTHorizontalPixUpD.Value = new decimal(new int[] {
+            4096,
+            0,
+            0,
+            0});
+			// 
+			// label21
+			// 
+			this.label21.AutoSize = true;
+			this.label21.Font = new System.Drawing.Font("Garamond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label21.Location = new System.Drawing.Point(6, 89);
+			this.label21.Name = "label21";
+			this.label21.Size = new System.Drawing.Size(73, 17);
+			this.label21.TabIndex = 43;
+			this.label21.Text = "Image Size:";
+			// 
+			// label16
+			// 
+			this.label16.AutoSize = true;
+			this.label16.Font = new System.Drawing.Font("Garamond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label16.Location = new System.Drawing.Point(6, 195);
+			this.label16.Name = "label16";
+			this.label16.Size = new System.Drawing.Size(72, 17);
+			this.label16.TabIndex = 41;
+			this.label16.Text = "Mag Limit:";
+			// 
+			// BSWTPlateScaleUpD
+			// 
+			this.BSWTPlateScaleUpD.DecimalPlaces = 3;
+			this.BSWTPlateScaleUpD.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BSWTPlateScaleUpD.Increment = new decimal(new int[] {
+            2,
+            0,
+            0,
+            131072});
+			this.BSWTPlateScaleUpD.Location = new System.Drawing.Point(98, 113);
+			this.BSWTPlateScaleUpD.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            131072});
+			this.BSWTPlateScaleUpD.Name = "BSWTPlateScaleUpD";
+			this.BSWTPlateScaleUpD.Size = new System.Drawing.Size(56, 20);
+			this.BSWTPlateScaleUpD.TabIndex = 40;
+			this.BSWTPlateScaleUpD.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Location = new System.Drawing.Point(160, 116);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(71, 13);
+			this.label7.TabIndex = 38;
+			this.label7.Text = "(arcsec/pixel)";
+			// 
+			// label13
+			// 
+			this.label13.AutoSize = true;
+			this.label13.Font = new System.Drawing.Font("Garamond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label13.Location = new System.Drawing.Point(6, 114);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(70, 17);
+			this.label13.TabIndex = 37;
+			this.label13.Text = "Plate Scale:";
+			// 
+			// BSWTMessageBox
+			// 
+			this.BSWTMessageBox.BackColor = System.Drawing.Color.Gainsboro;
+			this.BSWTMessageBox.FormattingEnabled = true;
+			this.BSWTMessageBox.Location = new System.Drawing.Point(9, 273);
+			this.BSWTMessageBox.Name = "BSWTMessageBox";
+			this.BSWTMessageBox.Size = new System.Drawing.Size(355, 160);
+			this.BSWTMessageBox.TabIndex = 36;
+			this.BSWTMessageBox.Visible = false;
+			// 
+			// BSWTExecuteBtn
+			// 
+			this.BSWTExecuteBtn.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.BSWTExecuteBtn.Location = new System.Drawing.Point(9, 221);
+			this.BSWTExecuteBtn.Name = "BSWTExecuteBtn";
+			this.BSWTExecuteBtn.Size = new System.Drawing.Size(94, 45);
+			this.BSWTExecuteBtn.TabIndex = 35;
+			this.BSWTExecuteBtn.Text = "Query Target Area";
+			this.BSWTExecuteBtn.UseVisualStyleBackColor = true;
+			this.BSWTExecuteBtn.Click += new System.EventHandler(this.BSWTExecuteBtn_Click);
+			// 
+			// BSWTPictureBox
+			// 
+			this.BSWTPictureBox.BackColor = System.Drawing.Color.Black;
+			this.BSWTPictureBox.Location = new System.Drawing.Point(434, 7);
+			this.BSWTPictureBox.Name = "BSWTPictureBox";
+			this.BSWTPictureBox.Size = new System.Drawing.Size(777, 777);
+			this.BSWTPictureBox.TabIndex = 34;
+			this.BSWTPictureBox.TabStop = false;
+			this.BSWTPictureBox.Paint += new System.Windows.Forms.PaintEventHandler(this.BSWTPictureBox_Paint);
+			// 
+			// FieldBufferUpD
+			// 
+			this.FieldBufferUpD.DecimalPlaces = 1;
+			this.FieldBufferUpD.Location = new System.Drawing.Point(98, 35);
+			this.FieldBufferUpD.Maximum = new decimal(new int[] {
+            300,
+            0,
+            0,
+            0});
+			this.FieldBufferUpD.Name = "FieldBufferUpD";
+			this.FieldBufferUpD.Size = new System.Drawing.Size(56, 20);
+			this.FieldBufferUpD.TabIndex = 33;
+			this.FieldBufferUpD.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+			// 
+			// label27
+			// 
+			this.label27.AutoSize = true;
+			this.label27.Location = new System.Drawing.Point(160, 39);
+			this.label27.Name = "label27";
+			this.label27.Size = new System.Drawing.Size(67, 13);
+			this.label27.TabIndex = 32;
+			this.label27.Text = "(arc minutes)";
+			// 
+			// label28
+			// 
+			this.label28.AutoSize = true;
+			this.label28.Font = new System.Drawing.Font("Garamond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label28.Location = new System.Drawing.Point(6, 37);
+			this.label28.Name = "label28";
+			this.label28.Size = new System.Drawing.Size(80, 17);
+			this.label28.TabIndex = 31;
+			this.label28.Text = "Field Buffer:";
+			// 
+			// BSWTFilterDrop
+			// 
+			this.BSWTFilterDrop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.BSWTFilterDrop.FormattingEnabled = true;
+			this.BSWTFilterDrop.Items.AddRange(new object[] {
+            "bp",
+            "g",
+            "rp"});
+			this.BSWTFilterDrop.Location = new System.Drawing.Point(98, 167);
+			this.BSWTFilterDrop.Name = "BSWTFilterDrop";
+			this.BSWTFilterDrop.Size = new System.Drawing.Size(90, 21);
+			this.BSWTFilterDrop.TabIndex = 30;
+			// 
+			// label26
+			// 
+			this.label26.AutoSize = true;
+			this.label26.Font = new System.Drawing.Font("Garamond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label26.Location = new System.Drawing.Point(6, 169);
+			this.label26.Name = "label26";
+			this.label26.Size = new System.Drawing.Size(40, 17);
+			this.label26.TabIndex = 29;
+			this.label26.Text = "Filter:";
+			// 
+			// BSWTCatalogueDrop
+			// 
+			this.BSWTCatalogueDrop.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.BSWTCatalogueDrop.FormattingEnabled = true;
+			this.BSWTCatalogueDrop.Items.AddRange(new object[] {
+            "GaiaDR3"});
+			this.BSWTCatalogueDrop.Location = new System.Drawing.Point(98, 141);
+			this.BSWTCatalogueDrop.Name = "BSWTCatalogueDrop";
+			this.BSWTCatalogueDrop.Size = new System.Drawing.Size(90, 21);
+			this.BSWTCatalogueDrop.TabIndex = 28;
+			// 
+			// label25
+			// 
+			this.label25.AutoSize = true;
+			this.label25.Font = new System.Drawing.Font("Garamond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label25.Location = new System.Drawing.Point(6, 141);
+			this.label25.Name = "label25";
+			this.label25.Size = new System.Drawing.Size(68, 17);
+			this.label25.TabIndex = 27;
+			this.label25.Text = "Catalogue:";
+			// 
+			// label24
+			// 
+			this.label24.AutoSize = true;
+			this.label24.Font = new System.Drawing.Font("Garamond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label24.Location = new System.Drawing.Point(6, 61);
+			this.label24.Name = "label24";
+			this.label24.Size = new System.Drawing.Size(77, 17);
+			this.label24.TabIndex = 25;
+			this.label24.Text = "Field Shape:";
+			// 
+			// FieldShapeBtn
+			// 
+			this.FieldShapeBtn.Location = new System.Drawing.Point(98, 57);
+			this.FieldShapeBtn.Name = "FieldShapeBtn";
+			this.FieldShapeBtn.Size = new System.Drawing.Size(56, 23);
+			this.FieldShapeBtn.TabIndex = 24;
+			this.FieldShapeBtn.Text = "Square";
+			this.FieldShapeBtn.UseVisualStyleBackColor = true;
+			this.FieldShapeBtn.Click += new System.EventHandler(this.FieldShapeBtn_Click);
+			// 
+			// DecTargetBtn
+			// 
+			this.DecTargetBtn.Location = new System.Drawing.Point(196, 6);
+			this.DecTargetBtn.Name = "DecTargetBtn";
+			this.DecTargetBtn.Size = new System.Drawing.Size(75, 23);
+			this.DecTargetBtn.TabIndex = 11;
+			this.DecTargetBtn.Text = "Dec Target:";
+			this.DecTargetBtn.UseVisualStyleBackColor = true;
+			this.DecTargetBtn.Click += new System.EventHandler(this.RATargetBtn_Click);
+			// 
+			// RATargetBtn
+			// 
+			this.RATargetBtn.Location = new System.Drawing.Point(8, 6);
+			this.RATargetBtn.Name = "RATargetBtn";
+			this.RATargetBtn.Size = new System.Drawing.Size(75, 23);
+			this.RATargetBtn.TabIndex = 2;
+			this.RATargetBtn.Text = "RA Target:";
+			this.RATargetBtn.UseVisualStyleBackColor = true;
+			this.RATargetBtn.Click += new System.EventHandler(this.RATargetBtn_Click);
+			// 
+			// BSWTMagLimitUpD
+			// 
+			this.BSWTMagLimitUpD.DecimalPlaces = 1;
+			this.BSWTMagLimitUpD.Location = new System.Drawing.Point(98, 195);
+			this.BSWTMagLimitUpD.Maximum = new decimal(new int[] {
+            25,
+            0,
+            0,
+            0});
+			this.BSWTMagLimitUpD.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            -2147483648});
+			this.BSWTMagLimitUpD.Name = "BSWTMagLimitUpD";
+			this.BSWTMagLimitUpD.Size = new System.Drawing.Size(56, 20);
+			this.BSWTMagLimitUpD.TabIndex = 52;
+			this.BSWTMagLimitUpD.Value = new decimal(new int[] {
+            14,
+            0,
+            0,
+            0});
 			// 
 			// Form1
 			// 
@@ -1326,18 +1829,8 @@
 			this.BackColor = System.Drawing.Color.Silver;
 			this.CancelButton = this.EscBtn;
 			this.ClientSize = new System.Drawing.Size(1446, 842);
+			this.Controls.Add(this.tabControl1);
 			this.Controls.Add(this.MainMenu);
-			this.Controls.Add(this.SaveOutputsBtn);
-			this.Controls.Add(this.DetectorGroupBox);
-			this.Controls.Add(this.ShowLocalFlux);
-			this.Controls.Add(this.SourcePropertiesGroupBox);
-			this.Controls.Add(this.FilterGroupBox);
-			this.Controls.Add(this.ExtinctionGroupBox);
-			this.Controls.Add(this.SourceTypeGroupBox);
-			this.Controls.Add(this.Chart_Final);
-			this.Controls.Add(this.EscBtn);
-			this.Controls.Add(this.Chart_Filter);
-			this.Controls.Add(this.Chart_Source);
 			this.DoubleBuffered = true;
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1371,6 +1864,18 @@
 			((System.ComponentModel.ISupportInitialize)(this.FWHMUpD)).EndInit();
 			this.MainMenu.ResumeLayout(false);
 			this.MainMenu.PerformLayout();
+			this.tabControl1.ResumeLayout(false);
+			this.TabETC.ResumeLayout(false);
+			this.TabETC.PerformLayout();
+			this.TabBSWT.ResumeLayout(false);
+			this.TabBSWT.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.BSWTMaxBrightSourcesUpD)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.BSWTVerticalPixUpD)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.BSWTHorizontalPixUpD)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.BSWTPlateScaleUpD)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.BSWTPictureBox)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.FieldBufferUpD)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.BSWTMagLimitUpD)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -1390,7 +1895,6 @@
 		private System.Windows.Forms.ComboBox SourceAGNDrop;
 		private System.Windows.Forms.RadioButton SourceAGNRadBtn;
 		private System.Windows.Forms.GroupBox FilterGroupBox;
-		private System.Windows.Forms.Button EscBtn;
 		private System.Windows.Forms.RadioButton SourcePowerLawRadBtn;
 		private System.Windows.Forms.ComboBox SourcePowerLawDrop;
 		private System.Windows.Forms.GroupBox SourcePropertiesGroupBox;
@@ -1431,7 +1935,6 @@
 		private System.Windows.Forms.Button SNHelpBtn;
 		private System.Windows.Forms.Label label14;
 		private System.Windows.Forms.TextBox SourceBlackbodyTempTxt;
-		private System.Windows.Forms.Button SaveOutputsBtn;
 		private System.Windows.Forms.ToolTip toolTip1;
 		private System.Windows.Forms.Label label15;
 		private System.Windows.Forms.Label FWHMpixelsTxt;
@@ -1445,19 +1948,55 @@
 		private System.Windows.Forms.Label label18;
 		private System.Windows.Forms.MenuStrip MainMenu;
 		private System.Windows.Forms.ToolStripMenuItem FileMenu;
-		private System.Windows.Forms.ToolStripMenuItem SettingMenu;
-		private System.Windows.Forms.ToolStripMenuItem DetectorSystemMenuItem;
+		private System.Windows.Forms.ComboBox FilterDropDown;
+		private System.Windows.Forms.Label label19;
+		private System.Windows.Forms.DataGridView FilterGridView;
+		private System.Windows.Forms.NumericUpDown RedShiftUpDown;
+		private System.Windows.Forms.TabControl tabControl1;
+		private System.Windows.Forms.TabPage TabETC;
+		private System.Windows.Forms.TabPage TabBSWT;
+		private System.Windows.Forms.ToolStripMenuItem ETCMenu;
 		private System.Windows.Forms.ToolStripMenuItem PlotLimitsMenu;
 		private System.Windows.Forms.ToolStripMenuItem xAxisToolStripMenuItem;
 		private System.Windows.Forms.ToolStripTextBox PlotLimitXMinText;
 		private System.Windows.Forms.ToolStripMenuItem xAxisMaximumToolStripMenuItem;
 		private System.Windows.Forms.ToolStripTextBox PlotLimitXMaxText;
+		private System.Windows.Forms.ToolStripMenuItem DetectorSystemMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem LoadedDetectorSystemMenuLabel;
 		private System.Windows.Forms.ToolStripMenuItem SelectNewDetectorMenuBtn;
-		private System.Windows.Forms.ComboBox FilterDropDown;
-		private System.Windows.Forms.Label label19;
-		private System.Windows.Forms.DataGridView FilterGridView;
-		private System.Windows.Forms.NumericUpDown RedShiftUpDown;
+		private System.Windows.Forms.Button SaveOutputsBtn;
+		private System.Windows.Forms.Button EscBtn;
+		private System.Windows.Forms.ToolStripMenuItem FileMenuQuit;
+		private System.Windows.Forms.Button RATargetBtn;
+		private System.Windows.Forms.TextBox DecTargetTxt;
+		private System.Windows.Forms.Button DecTargetBtn;
+		private System.Windows.Forms.Label label24;
+		private System.Windows.Forms.Button FieldShapeBtn;
+		private System.Windows.Forms.ToolStripMenuItem BSWTMenu;
+		private System.Windows.Forms.ComboBox BSWTCatalogueDrop;
+		private System.Windows.Forms.Label label25;
+		private System.Windows.Forms.ComboBox BSWTFilterDrop;
+		private System.Windows.Forms.Label label26;
+		private System.Windows.Forms.NumericUpDown FieldBufferUpD;
+		private System.Windows.Forms.Label label28;
+		private System.Windows.Forms.PictureBox BSWTPictureBox;
+		private System.Windows.Forms.Button BSWTExecuteBtn;
+		private System.Windows.Forms.ListBox BSWTMessageBox;
+		private System.Windows.Forms.TextBox RATargetTxt;
+		private System.Windows.Forms.NumericUpDown BSWTPlateScaleUpD;
+		private System.Windows.Forms.Label label7;
+		private System.Windows.Forms.Label label13;
+		private System.Windows.Forms.Label label16;
+		private System.Windows.Forms.Label label27;
+		private System.Windows.Forms.NumericUpDown BSWTHorizontalPixUpD;
+		private System.Windows.Forms.Label label21;
+		private System.Windows.Forms.Label label22;
+		private System.Windows.Forms.NumericUpDown BSWTVerticalPixUpD;
+		private System.Windows.Forms.Label label20;
+		private System.Windows.Forms.NumericUpDown BSWTMaxBrightSourcesUpD;
+		private System.Windows.Forms.Label label29;
+		private System.Windows.Forms.CheckBox BSWTForceQueryChck;
+		private System.Windows.Forms.NumericUpDown BSWTMagLimitUpD;
 	}
 }
 

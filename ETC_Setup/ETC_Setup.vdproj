@@ -644,6 +644,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -2822,7 +2830,21 @@
                     "Transitive" = "11:FALSE"
                         "Keys"
                         {
-                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_7E9A38C9187E4E0393B08E0BA87ED280"
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_8FEBBB6F089D4EEE9740E6F103111C62"
+                            {
+                            "Name" = "8:[Manufacturer]"
+                            "Condition" = "8:"
+                            "AlwaysCreate" = "11:FALSE"
+                            "DeleteAtUninstall" = "11:FALSE"
+                            "Transitive" = "11:FALSE"
+                                "Keys"
+                                {
+                                }
+                                "Values"
+                                {
+                                }
+                            }
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_D80BBE3254A9483D86DCACB1726CDFBF"
                             {
                             "Name" = "8:AstroWerks"
                             "Condition" = "8:"
@@ -2831,7 +2853,7 @@
                             "Transitive" = "11:FALSE"
                                 "Keys"
                                 {
-                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_F003EF2FE41E4E4292E9111B1454E62C"
+                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_CE0FDD7A382D43908F952A427AADC7F6"
                                     {
                                     "Name" = "8:CETC"
                                     "Condition" = "8:"
@@ -2843,343 +2865,7 @@
                                         }
                                         "Values"
                                         {
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_018166D3B35140318E82604EE5A29A75"
-                                            {
-                                            "Name" = "8:PowerLawNormTxt"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:1"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_01EBF996A7974916B3819BD7028FC13A"
-                                            {
-                                            "Name" = "8:SourceAGNDropIndex"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:3"
-                                            "Value" = "3:0"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_02FC7A4DF3054B8781252109B62B1AE7"
-                                            {
-                                            "Name" = "8:ReadNoiseUpD"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:8"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_123B3B6C457545AEB0005278CCAB720E"
-                                            {
-                                            "Name" = "8:ExtinctionRvTxt"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:3.1"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_1BE8E51DBD844A548DC226D9C7E4F82B"
-                                            {
-                                            "Name" = "8:DSDirectory"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:C:\\CASTOR_ETC\\"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_236FCD235BA04C19A7FE7ABF4B41787D"
-                                            {
-                                            "Name" = "8:mvTxt"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:20.8"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_268D147852DB413F987EA44C78C573B9"
-                                            {
-                                            "Name" = "8:SersicReffUpD"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:12"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_2825DD9B088446CA97AC7B07878299F6"
-                                            {
-                                            "Name" = "8:DistanceTxt"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:100"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_2CB99CEC82884AD2A693413E46C65601"
-                                            {
-                                            "Name" = "8:SourcePowerLawDropIndex"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:3"
-                                            "Value" = "3:0"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_322B6AA3051547A29BCE2CE4B1D6517E"
-                                            {
-                                            "Name" = "8:SourceStarDropIndex"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:3"
-                                            "Value" = "3:20"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_3BC15C23858D421BB48BC11B32442810"
-                                            {
-                                            "Name" = "8:SourceGalaxyDropIndex"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:3"
-                                            "Value" = "3:0"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_409D4ABAA7D54D45A9D34329012BF59D"
-                                            {
-                                            "Name" = "8:SourceBlackbodyRadBtn"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:False"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_433AC78F649C4420A699F103AFE97B33"
-                                            {
-                                            "Name" = "8:FilterUVRadBtnChckd"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:False"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_45CB1DECEEC14F8AB5BCE9FB69896317"
-                                            {
-                                            "Name" = "8:SourceSigmaPixUpD"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:5"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_4A0A37E274334B8597697E926EA54D17"
-                                            {
-                                            "Name" = "8:ReadRateUpD"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:1.0"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_575C94A51F504EE489AD7C80772DB845"
-                                            {
-                                            "Name" = "8:DarkRateUpD"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:4.0"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_5CB4AB4323644543B7543C267184051E"
-                                            {
-                                            "Name" = "8:SNTargetUpD"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:5"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_5DA3758AB59C4FA2891F7CD7664AD24E"
-                                            {
-                                            "Name" = "8:RadiusTxt"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:5.0"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_601B99BB7C564A8D8BAB3B64F715BCE2"
-                                            {
-                                            "Name" = "8:SourcePowerLawRadBtn"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:False"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_75BB182B7F554309B911786DE886AA4C"
-                                            {
-                                            "Name" = "8:FiltergRadBtnChckd"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:True"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_79B81B27E6B943F8BF794A2C797E1313"
-                                            {
-                                            "Name" = "8:SourceBlackbodyTempTxt"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:5778"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_7D0C1EBF1C69431783FC835AE7C64B05"
-                                            {
-                                            "Name" = "8:mTxt"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:12.5"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_8D986AAEB7614588B1D7918087A89DFA"
-                                            {
-                                            "Name" = "8:FilterUVDarkRadBtnChckd"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:False"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_8F672A8F47E04B3A92EEAADEE2711971"
-                                            {
-                                            "Name" = "8:FWHMUpD"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:0.05"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_9C748058B13D4651B385B1CCF03F0A5D"
-                                            {
-                                            "Name" = "8:PlateScaleUpD"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:0.08"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_A8CD506448BE4028805A0D8B906F5E38"
-                                            {
-                                            "Name" = "8:FilterbRadBtnChckd"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:False"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_AC280376DF81460D8E8B0570F42179E0"
-                                            {
-                                            "Name" = "8:ThroughputComponentIndex"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:3"
-                                            "Value" = "3:2"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_AFA9C1495FAD41FCB22C62392491E88A"
-                                            {
-                                            "Name" = "8:RedShiftUpDown"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:0.00"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_B9C40C2147EF4425A2DD2C7531DC1312"
-                                            {
-                                            "Name" = "8:SersicnUpD"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:4.0"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_BEC0001145FF4E268DE65267B324F0CC"
-                                            {
-                                            "Name" = "8:FilterUWideRadBtnChckd"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:False"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_C2446E42F4AF42D59DFA26E2E727309B"
-                                            {
-                                            "Name" = "8:SourceApertureRadiusUpD"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:0.2"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_C24796CAF20C43FAACC1D62102C6EBBE"
-                                            {
-                                            "Name" = "8:PowerLawAlphaTxt"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:1"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_C66ED503877B4E0DAE87FF2A685AAF4C"
-                                            {
-                                            "Name" = "8:ExtinctionColumnDensityTxt"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:1"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_C930F3301C0143069414940B016F1487"
-                                            {
-                                            "Name" = "8:DistanceRadBtn"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:True"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_CBEE8D62D1394C6582D544AEBBA095AB"
-                                            {
-                                            "Name" = "8:SourceStarRadBtn"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:True"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_CCD9DBF66710411BB1FB4DA84F1B1DF0"
-                                            {
-                                            "Name" = "8:FilteruRadBtnChckd"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:False"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_CDFE87947F314148A43DDA5E770CB8FC"
-                                            {
-                                            "Name" = "8:mvRadBtn"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:False"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_CE61A09B940D46A7BBEF8CCDAA1C6D9A"
-                                            {
-                                            "Name" = "8:MirrorArea"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:0.785"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_DA3B1CA502AA4C2988538BA7CD6910B7"
-                                            {
-                                            "Name" = "8:RedShiftTxt"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:0.0"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_E1CE64DDA8984157A70F0327915CE62B"
-                                            {
-                                            "Name" = "8:PlotLimitXMaxText"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:620"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_E7C3C5C3534F482E9905C4196C62BF81"
-                                            {
-                                            "Name" = "8:PlotLimitXMinText"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:120"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_E89F6B281990476DA566649E93EDE582"
-                                            {
-                                            "Name" = "8:SourceAGNRadBtn"
-                                            "Condition" = "8:"
-                                            "Transitive" = "11:FALSE"
-                                            "ValueTypes" = "3:1"
-                                            "Value" = "8:False"
-                                            }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_E8D8D0B5DACB42D8BD38967476271799"
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_01D2D108C74F44F8B22099C6173DF9E2"
                                             {
                                             "Name" = "8:ExtinctionAvTxt"
                                             "Condition" = "8:"
@@ -3187,15 +2873,239 @@
                                             "ValueTypes" = "3:1"
                                             "Value" = "8:1"
                                             }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_EA517B80EA5E45659397EAC222C004FD"
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_05139FF094A24CC1A72709536158A34E"
                                             {
-                                            "Name" = "8:ExtinctionAvRadBtn"
+                                            "Name" = "8:BSWTVerticalPixUpD"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:7096"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_0536AAD5466843AAB4E6920D2C79A3B6"
+                                            {
+                                            "Name" = "8:RATargetTxt"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:5"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_1181098FDA144E3C9560A907EBBFADE7"
+                                            {
+                                            "Name" = "8:DistanceTxt"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:300"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_163068CA22DF4C7B8D322E0C2833CD08"
+                                            {
+                                            "Name" = "8:RedShiftTxt"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:0.0"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_1969CF10F93F4296A35500446D7ADD9A"
+                                            {
+                                            "Name" = "8:SourceBlackbodyTempTxt"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:5778"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_1D89BD5A231F4D83A18FA267522722A5"
+                                            {
+                                            "Name" = "8:SourceStarDropIndex"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:3"
+                                            "Value" = "3:20"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_1E43DC479DBD45DD8C5ECD6246033678"
+                                            {
+                                            "Name" = "8:ThroughputComponentIndex"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:3"
+                                            "Value" = "3:2"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_295AAEE9AF84478C93D55A4BCC3AD5E8"
+                                            {
+                                            "Name" = "8:ExtinctionColumnDensityTxt"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:1"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_31BDFE5ACE41404DAA7B1BC1785335FE"
+                                            {
+                                            "Name" = "8:SourceAGNRadBtn"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:False"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_31F706D4B5FA40FCB91D9A248DF10583"
+                                            {
+                                            "Name" = "8:SourceBlackbodyRadBtn"
                                             "Condition" = "8:"
                                             "Transitive" = "11:FALSE"
                                             "ValueTypes" = "3:1"
                                             "Value" = "8:True"
                                             }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_F2D2AF36B41E4180B22AEC636DB5A082"
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_321A77AC02BE4518A0DCED7F34B7EB9B"
+                                            {
+                                            "Name" = "8:FilteruRadBtnChckd"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:False"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_3808C7C097974280A4BDDF29A30C745B"
+                                            {
+                                            "Name" = "8:RedShiftUpDown"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:0.00"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_38D41856CC5E4A76A3959E49701972F9"
+                                            {
+                                            "Name" = "8:BSWTPlateScaleUpD"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:0.416"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_3E0BC47E8F5C4F5FBB272607AC2C613F"
+                                            {
+                                            "Name" = "8:SersicReffUpD"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:12"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_43BA5769BDB94549A066F1725E6FBA93"
+                                            {
+                                            "Name" = "8:BSWTMaxBrightSourcesUpD"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:50"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_45B462062884435D9D9C61D2DADCB042"
+                                            {
+                                            "Name" = "8:BSWTHorizontalPixUpD"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:7096"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_468B704CEFE34BA6AB898B4F7A7BB6A8"
+                                            {
+                                            "Name" = "8:FieldShapeBtn"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:Square"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_471BF140B44B4755B00EBE10098164A7"
+                                            {
+                                            "Name" = "8:MirrorArea"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:0.785"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_4B946806E0FB423AA6BFDE0CC19B9C6B"
+                                            {
+                                            "Name" = "8:PowerLawAlphaTxt"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:1"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_506CBAF624E34BA19D50FF6F0802B4CF"
+                                            {
+                                            "Name" = "8:SourceApertureRadiusUpD"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:0.2"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_57504F3074874C39B2112110219E3FB6"
+                                            {
+                                            "Name" = "8:DarkRateUpD"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:4.0"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_6825BA1F515E4A01A77A74FF416E64E1"
+                                            {
+                                            "Name" = "8:ReadNoiseUpD"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:8"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_687CD66826324F08BC854D4EB2BC085A"
+                                            {
+                                            "Name" = "8:SourcePowerLawRadBtn"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:False"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_80C0905D2D204DEB95751D0CA0139714"
+                                            {
+                                            "Name" = "8:mvRadBtn"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:False"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_810C533A10BD4328ABB1E94D8CCA2FAE"
+                                            {
+                                            "Name" = "8:DistanceRadBtn"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:True"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_8BF0212CFEA84266ADBB0F4B83AAC23E"
+                                            {
+                                            "Name" = "8:SourceGalaxyDropIndex"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:3"
+                                            "Value" = "3:0"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_8D3FED57A90B49FFB8E69E4DDB4E3133"
+                                            {
+                                            "Name" = "8:SourcePowerLawDropIndex"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:3"
+                                            "Value" = "3:0"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_9077228A74854A4AA9D00BA7485018CA"
+                                            {
+                                            "Name" = "8:PlotLimitXMinText"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:120"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_95FDD3E876FB4B288A13F861D69E08E4"
+                                            {
+                                            "Name" = "8:FilterUWideRadBtnChckd"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:False"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_989A3512B56D486ABB148CCBDE7350BB"
                                             {
                                             "Name" = "8:ExtinctionColumnDensityRadBtn"
                                             "Condition" = "8:"
@@ -3203,7 +3113,63 @@
                                             "ValueTypes" = "3:1"
                                             "Value" = "8:False"
                                             }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_F7D0E17CA1C84836B4C48E5AA5F21E2F"
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_A009991121F148609CADF6D6D1E951F4"
+                                            {
+                                            "Name" = "8:FieldRadiusUpD"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:15"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_A19C6956884F4591B69A260F804499F9"
+                                            {
+                                            "Name" = "8:SourceAGNDropIndex"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:3"
+                                            "Value" = "3:0"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_A5E4679033F44E2B9A1C658F34238FF1"
+                                            {
+                                            "Name" = "8:FWHMUpD"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:0.05"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_AC2F6B79B419439695BACA5B3C3E3AC6"
+                                            {
+                                            "Name" = "8:BSWTFilterDrop"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:3"
+                                            "Value" = "3:0"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_AE600DD38F104B4F8A3AAFA31BDE584B"
+                                            {
+                                            "Name" = "8:SNTargetUpD"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:5"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_AF7483A83EF84CF6BC1F9DC0F07F5496"
+                                            {
+                                            "Name" = "8:SourceSigmaPixUpD"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:5"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_B17578F42EBA407BB06279EDAA1F665B"
+                                            {
+                                            "Name" = "8:mvTxt"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:20.8"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_B17FE84CC6614C28A9F33EF6DB394F4B"
                                             {
                                             "Name" = "8:SourceGalaxyRadBtn"
                                             "Condition" = "8:"
@@ -3211,7 +3177,23 @@
                                             "ValueTypes" = "3:1"
                                             "Value" = "8:False"
                                             }
-                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_FE98F9953A0B408BAA32928110D72B24"
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_B2F2492CF32A4A19A5F9D444E7767F1D"
+                                            {
+                                            "Name" = "8:DecTargetTxt"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:5"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_B63370B426264D2F8F2D4A487802023C"
+                                            {
+                                            "Name" = "8:FiltergRadBtnChckd"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:True"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_B86F295ECFEE4BC798201C4CD1ACDCCD"
                                             {
                                             "Name" = "8:ExtinctionDistanceRadBtn"
                                             "Condition" = "8:"
@@ -3219,22 +3201,144 @@
                                             "ValueTypes" = "3:1"
                                             "Value" = "8:False"
                                             }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_B882A0F26B8644D98D960A3F7307C00D"
+                                            {
+                                            "Name" = "8:DSDirectory"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:C:\\CASTOR_ETC\\"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_C159C7AD34CA4F77BDBEDB028D81CBCB"
+                                            {
+                                            "Name" = "8:ExtinctionRvTxt"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:3.1"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_C9FE4D513695425EACB6A8A8BFDAF72E"
+                                            {
+                                            "Name" = "8:BSWTMagLimitTxt"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:10"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_CD0BFFE7A379469BA5B01E0513DB13AD"
+                                            {
+                                            "Name" = "8:FieldBufferUpD"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:5"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_D00BC75C35E541CD9525AFBC7F1F3393"
+                                            {
+                                            "Name" = "8:RadiusTxt"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:5.0"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_D28090AEE69941C7AC90DAA1F79C0F6F"
+                                            {
+                                            "Name" = "8:FilterUVRadBtnChckd"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:False"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_DAA7956757304666A95AA7358A2182A3"
+                                            {
+                                            "Name" = "8:mTxt"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:12.5"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_DAD65F0C2F144DDDBF42DD930AD86C6D"
+                                            {
+                                            "Name" = "8:SourceStarRadBtn"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:False"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_DB57657E5E1249AE97F6EB9F047B4665"
+                                            {
+                                            "Name" = "8:PlotLimitXMaxText"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:620"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_DB66B450FE604685B02DE6DAF75B80F7"
+                                            {
+                                            "Name" = "8:FilterbRadBtnChckd"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:False"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_EAD108EEAE2F4492B653AD38E562A6AE"
+                                            {
+                                            "Name" = "8:PowerLawNormTxt"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:1"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_EB43FD633FC94E0CA9CD0AC705EA932B"
+                                            {
+                                            "Name" = "8:BSWTCatalogueDrop"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:3"
+                                            "Value" = "3:0"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_EBC3B5B9E40A46249DD9AF90B10AA33C"
+                                            {
+                                            "Name" = "8:SersicnUpD"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:4.0"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_EFF46A17775D4A488783A14E2D06A536"
+                                            {
+                                            "Name" = "8:PlateScaleUpD"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:0.08"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_F0D49E500CB14273A5E7AAB039BEFBA0"
+                                            {
+                                            "Name" = "8:FilterUVDarkRadBtnChckd"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:False"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_F4B9789929CF4DF5BAE4B607FC7CBB9A"
+                                            {
+                                            "Name" = "8:ExtinctionAvRadBtn"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:True"
+                                            }
+                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_F95502451D494CB184A4A0122E744466"
+                                            {
+                                            "Name" = "8:ReadRateUpD"
+                                            "Condition" = "8:"
+                                            "Transitive" = "11:FALSE"
+                                            "ValueTypes" = "3:1"
+                                            "Value" = "8:1.0"
+                                            }
                                         }
                                     }
-                                }
-                                "Values"
-                                {
-                                }
-                            }
-                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_8FEBBB6F089D4EEE9740E6F103111C62"
-                            {
-                            "Name" = "8:[Manufacturer]"
-                            "Condition" = "8:"
-                            "AlwaysCreate" = "11:FALSE"
-                            "DeleteAtUninstall" = "11:FALSE"
-                            "Transitive" = "11:FALSE"
-                                "Keys"
-                                {
                                 }
                                 "Values"
                                 {
